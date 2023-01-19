@@ -2,6 +2,10 @@ html {
   scroll-behavior: smooth;
 }
 
+
+
+
+
 .circular {
   width: 77px;
   height: 77px;
@@ -39,7 +43,8 @@ p {
 
 .bg-1 {
   /* BG of Display Picture */
-  background-color: #1abc9c;
+  background-color: rgb(26, 38, 59);
+  /*#1abc9c; */
   /* Green */
   color: #ffffff;
 }
@@ -52,7 +57,7 @@ p {
 }
 
 .bg-3 {
-  background-color: #ffffff;
+  background-color: rgb(77, 85, 97);
   /* White */
   color: #555555;
 }
