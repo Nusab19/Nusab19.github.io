@@ -24,6 +24,7 @@ html {
   transform: translate(-50%, -50%);
 }
 
+
 body {
   font: 20px Montserrat, sans-serif;
   line-height: 1.8;
@@ -41,27 +42,24 @@ p {
 .bg-1 {
   /* BG of Display Picture */
   background-color: rgb(26, 38, 59);
-  /*#1abc9c; */
-  /* Green */
   color: #ffffff;
 }
 
 .bg-2 {
-  /*  */
   background-color: #474e5d;
   /* Dark Blue */
   color: #ffffff;
 }
 
 .bg-3 {
-  background-color: rgb(77, 85, 97);
+  background-color: rgb(92, 101, 115);
   /* White */
   color: #555555;
 }
 
 .bg-4 {
+  /* Footer */
   background-color: #2f2f2f;
-  /* Black Gray */
   color: #fff;
 }
 
