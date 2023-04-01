@@ -1,0 +1,111 @@
+:root {
+  font-size: 16px;
+  font-family: "Roboto", sans-serif;
+  --dark: #191919;
+  --dark-blue: #2D3142;
+  --blueish: #7B9EA8;
+  --green: #ACEB98;
+  --off-white: #FFFFEA;
+  --bg-primary: #23232e;
+  --bg-secondary: #141418;
+  --transition-speed: 300ms;
+}
+
+.projects {
+  display: flex;
+  flex-wrap: wrap;
+  align-content: center;
+  justify-content: space-around;
+  font-family: Roboto, sans-serif;
+  margin: 0 auto;
+  max-width: 960px;
+  padding: 20px;
+}
+
+/* Style each project */
+.project {
+  width: 100%;
+  max-width: 480px;
+  background-color: #E7E7E7;
+  border-radius: 3vh;
+  box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.1);
+  margin-bottom: 23px;
+  padding: 20px;
+}
+
+/* Style the project image */
+.project img {
+  width: 100%;
+  aspect-ratio: 1/1;
+  object-fit: cover;
+  margin-top: 0.5rem;
+  border-radius: 10%;
+  border: 2px solid #191919;
+}
+
+/* Style the project title */
+.project h2 {
+  font-size: 3vh;
+  margin-top: 20px;
+  margin-bottom: 10px;
+  text-align: center;
+  color: black;
+}
+
+/* Style the project description */
+.project p {
+  margin-bottom: 20px;
+  font-size: 2vh;
+  line-height: 1;
+  text-align: center;
+  color: black;
+  font-family: Roboto;
+  font-weight: bold;
+}
+
+/* Style the project buttons */
+.buttons {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.buttons a {
+  padding: 12px 20px;
+  border-radius: 30px;
+  color: #fff;
+  font-weight: bold;
+  text-transform: uppercase;
+  text-decoration: none;
+  font-size: 2vh;
+}
+
+.github {
+  background-color: #04AA6D;
+}
+
+.demo {
+  background-color: #f44336;
+}
+
+/* Add some responsive styles */
+@media screen and (m-width: 768px) {
+  .project {
+    width: 48%;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  .project {
+    width: 43%;
+  }
+  .project p {
+    font-size: 1vh;
+  }
+  .project h2 {
+    font-size: 1.5vh;
+  }
+  .buttons a {
+    font-size: 1.3vh;
+  }
+}
