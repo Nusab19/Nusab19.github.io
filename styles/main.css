@@ -48,7 +48,7 @@ h1 {
 
 .lang {
   background-image:
-  linear-gradient(to right, #D7FCD4, #BAD9B5, #EDFF86, #FE938C, #D4F5F5);
+  linear-gradient(33deg, #D7FCD4, #BAD9B5, #EDFF86, #FE938C, #D4F5F5);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   animation: rainbow-animation 23s linear infinite;
@@ -56,7 +56,8 @@ h1 {
 
 .lang-light {
   background-image:
-  linear-gradient(to right, #E9DF00, #631D76, #034C3C, #2A1F2D, #F25C54);
+  linear-gradient(33deg, #9381FF, #E36397, #17BEBB, #9DDBAD);
+
 }
 
 @keyframes rainbow-animation {
@@ -132,7 +133,9 @@ h1 {
   color: var(--logo);
 }
 
-
+.bottom svg:hover {
+  height: 8vh;
+}
 
 
 a {
