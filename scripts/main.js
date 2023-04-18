@@ -35,10 +35,10 @@ function toggleTheme() {
   console.log(x == a)
   console.log(x == b)
   if (sun) {
-    view.innerHTML = a
+    view.innerHTML = a + `<span class="link-text" style="user-select: none;">Theme</span>`
     sun = false
   } else {
-    view.innerHTML = b
+    view.innerHTML = b + `<span class="link-text" style="user-select: none;">Theme</span>`
     sun = true
   }
 }

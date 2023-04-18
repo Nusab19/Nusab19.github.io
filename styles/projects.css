@@ -100,12 +100,12 @@
     width: 43%;
   }
   .project p {
-    font-size: 1vh;
+    font-size: 2.3vh;
   }
   .project h2 {
-    font-size: 1.5vh;
+    font-size: 6vh;
   }
   .buttons a {
-    font-size: 1.3vh;
+    font-size: 2vh;
   }
 }
