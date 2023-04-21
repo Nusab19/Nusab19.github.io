@@ -33,9 +33,14 @@
     href="https://cdn.jsdelivr.net/gh/Nusab19/Nusab19.github.io/assets/images/favicon-16x16.png">
   <link rel="icon" type="x-icon"
     href="https://cdn.jsdelivr.net/gh/Nusab19/Nusab19.github.io/assets/images/favicon-16x16.png">
-  <!-- https://cdn.jsdelivr.net/gh/Nusab19/Nusab19.github.io/ -->
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/Nusab19/Nusab19.github.io/styles/main.css">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/Nusab19/Nusab19.github.io/styles/projects.css">
+  <!-- Local -->
+  <!--
+  <link rel="stylesheet" href="styles/main.css">
+  <link rel="stylesheet" href="styles/projects.css">
+ -->
+
   <link href="https://fonts.googleapis.com/css2?family=Alkatra:wght@400&family=Roboto" rel="stylesheet">
 
 
@@ -85,7 +90,7 @@
       <li class="nav-item">
         <a href="#about" class="nav-link">
           <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512">
-            <<path
+            <path
               d="M64 32C28.7 32 0 60.7 0 96V416c0 35.3 28.7 64 64 64H512c35.3 0 64-28.7 64-64V96c0-35.3-28.7-64-64-64H64zm80 256h64c44.2 0 80 35.8 80 80c0 8.8-7.2 16-16 16H80c-8.8 0-16-7.2-16-16c0-44.2 35.8-80 80-80zm-32-96a64 64 0 1 1 128 0 64 64 0 1 1 -128 0zm256-32H496c8.8 0 16 7.2 16 16s-7.2 16-16 16H368c-8.8 0-16-7.2-16-16s7.2-16 16-16zm0 64H496c8.8 0 16 7.2 16 16s-7.2 16-16 16H368c-8.8 0-16-7.2-16-16s7.2-16 16-16zm0 64H496c8.8 0 16 7.2 16 16s-7.2 16-16 16H368c-8.8 0-16-7.2-16-16s7.2-16 16-16z"
               fill="currentColor" />
           </svg>
@@ -108,7 +113,7 @@
   </nav>
 
   <div class="container">
-    <div class="top" id="home">
+    <div class="one" id="home">
       <h1>Hello</h1>
       <img class="profile" src="https://cdn.jsdelivr.net/gh/Nusab19/Nusab19.github.io/assets/images/me.jpg">
       <p class="info">
@@ -126,29 +131,27 @@
       </p>
     </div>
 
-    <div class="middle" id="projects">
+    <div class="two" id="projects">
       <h1>
         Projects I've Made
       </h1>
-      <div clsss="project">
-        <div class="projects">
-          <div class="project">
-            <img src="https://cdn.jsdelivr.net/gh/Nusab19/Nusab19.github.io/assets/images/contestapi.jpg"
-              alt="Contests API">
-            <h2>Contests API</h2>
-            <p class="description">
-              This API fetches all upcoming contests' information and returns it in pretty <i>JSON</i> format.
-            </p>
-            <div class="buttons">
-              <a href="https://github.com/Nusab19/ContestsAPI" class="github" target=_blank>Github</a>
-              <a href="https://api.nusab.repl.co/cached/all" class="demo" target=_blank>Demo</a>
-            </div>
+      <div class="projects">
+        <div class="project">
+          <img src="https://cdn.jsdelivr.net/gh/Nusab19/Nusab19.github.io/assets/images/contestapi.jpg"
+            alt="Contests API">
+          <h2>Contests API</h2>
+          <p class="description">
+            This API fetches all upcoming contests' information and returns it in pretty <i>JSON</i> format.
+          </p>
+          <div class="buttons">
+            <a href="https://github.com/Nusab19/ContestsAPI" class="github" target=_blank>Github</a>
+            <a href="https://contestsapi.onrender.com/cached/all" class="demo" target=_blank>Demo</a>
           </div>
         </div>
       </div>
     </div>
 
-    <div class="lower" id="about">
+    <div class="three" id="about">
 
       <h1>About Me</h1>
       <p>
@@ -164,7 +167,7 @@
       </p>
     </div>
 
-    <div class="bottom" id="contact">
+    <div class="four" id="contact">
       <h1>
         Contact Me
       </h1>
@@ -221,6 +224,8 @@
       All rights reserved by Nusab Taha
     </div>
     <script src="https://cdn.jsdelivr.net/gh/Nusab19/Nusab19.github.io/scripts/main.js"></script>
+    <!-- <script src="scripts/main.js"></script> -->
+
 </body>
 
 </html>
