@@ -1,6 +1,6 @@
 :root {
   font-size: 16px;
-  font-family: "Roboto", sans-serif;
+  font-family: Ubuntu, Arial, Helvetica, sans-serif;
   --dark: #191919;
   --dark-blue: #2d3142;
   --blueish: #7b9ea8;
@@ -61,7 +61,6 @@ h1 {
 .info {
   margin-top: 0;
   font-size: var(--mid-font);
-  font-family: "Alkatra";
   margin-left: 10%;
   margin-right: 10%;
 }
@@ -118,7 +117,6 @@ h1 {
   padding: 1rem;
   text-align: center;
   color: var(--off-white);
-  font-family: Arial, Helvetica, sans-serif;
   font-size: var(--mid-font);
   height: auto;
 }
@@ -160,7 +158,6 @@ h1 {
   flex-wrap: wrap;
   align-content: center;
   justify-content: space-around;
-  font-family: Roboto, sans-serif;
   margin-top: 3%;
 }
 

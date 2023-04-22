@@ -11,15 +11,22 @@
   margin: 0 auto;
   max-width: 960px;
   padding: 20px;
+  font-family: Ubuntu, Arial, Helvetica, sans-serif;
 }
 
 .project {
   max-width: 480px;
-  background-color: #E7E7E7;
+  background-color: #444955;
+  color: #f9f9f7;
   border-radius: 3vh;
   box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.1);
   margin-bottom: 23px;
   padding: 20px;
+}
+
+.project-light{
+  background-color: #F9F8F8;
+  color: #000;
 }
 
 
@@ -29,7 +36,7 @@
   object-fit: cover;
   margin-top: 0.5rem;
   border-radius: 10%;
-  border: 2px solid #191919;
+  border: 3px solid #006969;
 }
 
 
@@ -38,7 +45,6 @@
   margin-top: 20px;
   margin-bottom: 10px;
   text-align: center;
-  color: black;
 }
 
 
@@ -47,8 +53,6 @@
   font-size: 2.7vw;
   line-height: 1;
   text-align: center;
-  color: black;
-  /* font-weight: bold; */
 }
 
 .buttons {
@@ -59,21 +63,16 @@
 
 .buttons a {
   padding: 12px 20px;
-  border-radius: 2vh;
-  color: #fff;
+  border-radius: 2vw;
   font-weight: bold;
   text-transform: uppercase;
   text-decoration: none;
-  font-size: 2vh;
+  font-size: 2vw;
+  background-color: var(--dark-blue);
+  color: #F0F2EF;
+
 }
 
-.github {
-  background-color: #04AA6D;
-}
-
-.demo {
-  background-color: #f44336;
-}
 
 /* small */
 @media screen and (min-width: 768px) {
