@@ -41,5 +41,5 @@ function toggleTheme() {
     sun = true;
   }
 }
-
+toggleTheme()
 VIEW.onclick = toggleTheme;
