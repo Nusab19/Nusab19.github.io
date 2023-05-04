@@ -121,7 +121,7 @@ h1 {
   height: auto;
 }
 
-.three a {
+.three a, .info a {
   color: #fca311;
   text-decoration: none;
   font-weight: bold;
