@@ -304,6 +304,12 @@ svg:hover {
     height: 3.5rem;
   }
 
+  .nav-item {
+    width: 100%;
+    margin-bottom: 0;
+  
+  }
+
   .one h1 {
     font-size: 3vh;
   }
