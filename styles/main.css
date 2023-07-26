@@ -10,8 +10,9 @@
   --bg-primary: #23232e;
   --bg-secondary: #141418;
   --transition-speed: 300ms;
-  --mid-font: var(--mid-font);
+  --mid-font: 1.5rem;
 }
+
 html {
   scroll-behavior: smooth;
 }
@@ -45,7 +46,7 @@ h1 {
 }
 .one h1 {
   margin: 3%;
-  font-size: clamp(1vw, 5vw, 4vw);
+  /* font-size: clamp(1vw, 5vw, 4vw); */
 }
 .info {
   margin-top: 0;
@@ -99,14 +100,9 @@ h1 {
   color: var(--off-white);
   font-size: var(--mid-font);
   height: auto;
+  line-height: 1.4;
 }
-.three a,
-.info a {
-  color: #fca311;
-  text-decoration: none;
-  font-weight: bold;
-  font-size: var(--mid-font);
-}
+
 .three-light {
   background-color: #b3efb2;
   color: var(--dark);
@@ -245,7 +241,21 @@ svg:hover {
 .navbar:hover .logo svg {
   transform: rotate(-180deg);
 }
+
+.anchor {
+  font-size: var(--mid-font);
+  color: #fca311;
+  text-decoration: none;
+  font-weight: bold;
+}
+
 @media only screen and (max-width: 600px) {
+  .anchor {
+    font-size: 1rem;
+  }
+  h1{
+    font-size: 2rem;
+  }
   .navbar {
     bottom: 0;
     width: 100vw;
@@ -255,9 +265,6 @@ svg:hover {
   .nav-item {
     width: 100%;
     margin-bottom: 0;
-  }
-  .one h1 {
-    font-size: 3vh;
   }
   .info {
     font-size: 2vh;
