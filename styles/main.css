@@ -24,6 +24,10 @@ body {
 h1 {
   font-size: clamp(1vw, 5vw, 6vw);
 }
+
+.large-h2{
+  font-size: clamp(1vw, 5vw, 6vw);
+}
 .one {
   background-color: var(--dark-blue);
   padding: 1rem;
@@ -256,6 +260,9 @@ svg:hover {
   h1{
     font-size: 2rem;
   }
+  .large-h2{
+    font-size: 2rem;
+  }
   .navbar {
     bottom: 0;
     width: 100vw;
@@ -267,14 +274,14 @@ svg:hover {
     margin-bottom: 0;
   }
   .info {
-    font-size: 2vh;
+    font-size: 1rem;
     margin: 0;
   }
   .three {
-    font-size: 3.5vw;
+    font-size: 1rem;
   }
   .three a {
-    font-size: 4vw;
+    font-size: 1rem;
   }
   .logo {
     display: none;
@@ -286,6 +293,8 @@ svg:hover {
     justify-content: center;
   }
 }
+
+
 @media only screen and (min-width: 600px) {
   .navbar {
     top: 0;
