@@ -1,5 +1,5 @@
 import os
-os.system("python3 -m pip install htmlmin csscompressor jsmin")
+# os.system("python3 -m pip install htmlmin csscompressor jsmin")
 
 import shutil
 import time
@@ -18,7 +18,7 @@ class Minify:
         }
         self.source = source
         self.dest = dest
-        
+
         print("Started Building")
         s = time.time()
         self.startBuild()
@@ -32,7 +32,7 @@ class Minify:
         if os.path.exists(dest):
             shutil.rmtree(dest)
             print("Deleted Folder First")
-            
+
         for root, dirs, files in os.walk(source):
             dirs[:] = [d for d in dirs if not d.startswith('.')]
 
@@ -73,7 +73,6 @@ class Minify:
 
     def copyFile(self, source: str, dest: str):
         shutil.copy2(source, dest)
-
 
 
 # Usage example:
