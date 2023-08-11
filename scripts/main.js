@@ -31,16 +31,21 @@ function toggleTheme() {
   PROJECTS.forEach((project) => {
     project.classList.toggle("project-light");
   });
+  
   if (sun) {
     VIEW.innerHTML =
       a + `<span class="link-text" style="user-select: none;">Theme</span>`;
     sun = false;
+    
   } else {
     VIEW.innerHTML =
       b + `<span class="link-text" style="user-select: none;">Theme</span>`;
     sun = true;
+    
   }
 }
 
-
+PROJECTS.forEach((project) => {
+  project.classList.toggle("project-light");
+});
 VIEW.onclick = toggleTheme;
