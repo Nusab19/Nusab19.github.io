@@ -18,12 +18,14 @@ class Minify:
         }
         self.source = source
         self.dest = dest
+        self.saved = 0
 
         print("Started Building")
         s = time.time()
         self.startBuild()
         e = time.time()
         print(f"Finished Build in {(e-s)*1e3:.3f} ms")
+        print(f"Total saved: {self.saved/1024:.2f} KB")
 
     def startBuild(self):
         source = self.source
@@ -49,6 +51,7 @@ class Minify:
             func = self.target[ext]
             content = self.readFile(source)
             minified = func(content)
+            self.saved += len(content) - len(minified)
             self.writeFile(dest, minified)
 
         else:
