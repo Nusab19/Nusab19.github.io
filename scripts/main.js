@@ -45,7 +45,7 @@ function toggleTheme() {
   }
 }
 
-PROJECTS.forEach((project) => {
-  project.classList.toggle("project-light");
-});
+// PROJECTS.forEach((project) => {
+//   project.classList.toggle("project-light");
+// });
 VIEW.onclick = toggleTheme;
