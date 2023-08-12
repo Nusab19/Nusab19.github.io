@@ -1,6 +1,6 @@
 :root {
   font-size: 16px;
-  font-family: Ubuntu, Arial, Helvetica, sans-serif;
+  font-family: Roboto, Arial, Helvetica, sans-serif;
   --dark: #191919;
   --dark-blue: #2d3142;
   --blueish: #7b9ea8;
@@ -148,7 +148,6 @@ h1 {
   padding: 3rem;
   padding-bottom: 8rem;
   text-align: center;
-  font-family: Alkatra;
   font-size: var(--mid-font);
 }
 .footer-light {
