@@ -1,6 +1,7 @@
 :root {
   font-size: 16px;
-  font-family: Roboto, Arial, Helvetica, sans-serif;
+  /* font-family: Roboto, Arial, Helvetica, sans-serif; */
+  font-family: Roboto;
   --dark: #191919;
   --dark-blue: #2d3142;
   --blueish: #7b9ea8;
