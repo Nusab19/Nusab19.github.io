@@ -3,15 +3,14 @@
 }
 
 .projects {
+  font-family: Ubuntu, Roboto, Arial, Helvetica, sans-serif;
   display: flex;
   flex-wrap: wrap;
   align-content: center;
   justify-content: space-around;
-  font-family: Roboto, sans-serif;
   margin: 0 auto;
   max-width: 98vw;
   padding: 20px;
-  font-family: Ubuntu, Arial, Helvetica, sans-serif;
 }
 
 .project {
