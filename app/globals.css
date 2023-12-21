@@ -1,3 +1,90 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* The animation code */
+@keyframes move {
+  0% {
+    margin-bottom: 2rem;
+  }
+  100% {
+    margin-top: 2rem;
+  }
+}
+
+/* The element to apply the animation to */
+.circle1,
+.circle2 {
+  animation-name: move;
+  animation-duration: 900ms;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  animation-timing-function: ease-in-out;
+  animation-fill-mode: forwards;
+}
+.circle2 {
+  animation-delay: 300ms;
+}
+
+/* Continuously moving circles */
+
+@keyframes walk-around {
+  0% {
+    left: 1%;
+    bottom: 5%;
+  }
+  25% {
+    left: 90%;
+    bottom: 50%;
+  }
+  50% {
+    left: 20%;
+    bottom: 70%;
+  }
+  75% {
+    left: 5%;
+    bottom: 20%;
+  }
+  100% {
+    left: 1%;
+    bottom: 5%;
+  }
+}
+.moving-circles {
+  position: absolute;
+  background-color: #00bbd4;
+  border-radius: 99999px;
+  animation-name: walk-around;
+  animation-duration: 7700ms;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  animation-timing-function: linear;
+  animation-fill-mode: forwards;
+}
+
+@keyframes rotate {
+  0% {
+    transform: rotate(0deg);
+  }
+  50%{
+    scale: 1 1.5;
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.rotate {
+  animation-name: rotate;
+  animation-duration: 10000ms;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  animation-timing-function: ease-in-out;
+  animation-fill-mode: forwards;
+}
