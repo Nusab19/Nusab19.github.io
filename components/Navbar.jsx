@@ -27,11 +27,11 @@ const Navbar = () => {
         visible ? "" : "-translate-y-full"
       }`}
     >
-      <span className="md:h-5 md:w-5 w-4 h-4 bg-[#00d49f] rounded-full ml-2 circle1"></span>
+      <span className="md:h-5 md:w-5 w-4 h-4 bg-[#00d49f] rounded-full ml-5 circle1"></span>
       <Link href="/">{icons.logo}</Link>
       <span className="md:h-5 md:w-5 w-4 h-4 bg-[#00bbd4] rounded-full circle2"></span>
 
-      <button className="absolute right-2">{icons.burgerMenu}</button>
+      <button className="absolute right-7">{icons.burgerMenu}</button>
     </nav>
   );
 };
