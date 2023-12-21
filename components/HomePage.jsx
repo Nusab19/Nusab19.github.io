@@ -12,7 +12,7 @@ const HomePage = () => {
           <span className="md:h-5 md:w-5 w-4 h-4 bg-[#00bbd4] rounded-full ml-3 md:mt-7 mt-3"></span>
         </div>
       </div>
-      <span className="md:h-5 md:w-5 w-4 h-4 moving-circles"></span>
+      {/* <span className="md:h-5 md:w-5 w-4 h-4 moving-circles1"></span> */}
     </div>
   );
 };

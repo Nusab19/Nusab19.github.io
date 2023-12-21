@@ -36,55 +36,53 @@
 
 @keyframes walk-around {
   0% {
-    left: 1%;
-    bottom: 5%;
+    right: 3%;
+    bottom: 20%;
+    border-radius: 1px;
+    background-color: #00bbd4;
+    scale: 1.3 1.3;
   }
   25% {
-    left: 90%;
-    bottom: 50%;
+    right: 3%;
+    bottom: 80%;
+    border-radius: 9px;
+    background-color: #00d47f;
+    scale: 0.7 0.7;
   }
   50% {
-    left: 20%;
-    bottom: 70%;
+    right: 93%;
+    bottom: 80%;
+    border-radius: 1px;
+    background-color: #00e1ff;
+    scale: 1.3 1.3;
   }
   75% {
-    left: 5%;
+    right: 93%;
     bottom: 20%;
+    border-radius: 9px;
+    background-color: #00e5bf;
+    scale: 1 1;
   }
   100% {
-    left: 1%;
-    bottom: 5%;
+    right: 3%;
+    bottom: 20%;
+    border-radius: 1px;
+    background-color: #00bbd4;
+    scale: 0 0;
   }
 }
-.moving-circles {
+.moving-circles1 {
   position: absolute;
-  background-color: #00bbd4;
-  border-radius: 99999px;
   animation-name: walk-around;
-  animation-duration: 7700ms;
-  animation-iteration-count: infinite;
-  animation-direction: alternate;
+  animation-duration: 7s;
+  animation-iteration-count: 1;
   animation-timing-function: linear;
   animation-fill-mode: forwards;
 }
 
-@keyframes rotate {
-  0% {
-    transform: rotate(0deg);
+/* Large screens */
+@media screen and (min-width: 769px) {
+  .moving-circles1 {
+    animation-duration: 10s;
   }
-  50%{
-    scale: 1 1.5;
-  }
-  100% {
-    transform: rotate(360deg);
-  }
-}
-
-.rotate {
-  animation-name: rotate;
-  animation-duration: 10000ms;
-  animation-iteration-count: infinite;
-  animation-direction: alternate;
-  animation-timing-function: ease-in-out;
-  animation-fill-mode: forwards;
 }
