@@ -1,3 +1,5 @@
+"use client";
+import { useState, useEffect } from "react";
 import { ABeeZee } from "next/font/google";
 import Link from "next/link";
 import Image from "next/image";
@@ -24,13 +26,27 @@ const About = () => {
               </span>
             </span>
           </span>
-          <span className="flex flex-col items-center justify-center gap-5">
+          <span className="relative flex flex-col items-center justify-center gap-5">
+            <Image // This is a hacky way to blur the image on load
+              src="/images/nightRawCP.jpg"
+              alt="Nusab Taha's Profile Picture"
+              width={32}
+              height={32}
+              className="absolute inset-0 right-0 h-[200px] w-[200px] rounded-[2.5em] blur-[5px] transition-opacity duration-500"
+            />
             <Image
               src="/images/nightRawCP.jpg"
               alt="Nusab Taha's Profile Picture"
               width={200}
               height={200}
-              className="rounded-[50px]"
+              className="h-[200px] w-[200px] overflow-hidden rounded-[2.5em] opacity-0 transition-all duration-300 hover:scale-110"
+              onLoad={(e) => {
+                e.target.classList.add("opacity-100");
+                e.target.previousSibling.classList.add("opacity-0");
+                setTimeout(() => {
+                  e.target.previousSibling.classList.add("hidden");
+                }, 300);
+              }}
             />
             <span className="flex flex-col items-center justify-center">
               <span className="text-2xl font-bold">Nusab Taha</span>
