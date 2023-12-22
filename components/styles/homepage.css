@@ -1,0 +1,36 @@
+:root {
+  --white: #ffffff;
+  --color: #00ffbf;
+}
+
+@keyframes background-pan {
+  from {
+    background-position: 0% center;
+  }
+
+  to {
+    background-position: -200% center;
+  }
+}
+
+.magic-text {
+  animation: background-pan;
+  animation-duration: 3s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+  animation-direction: alternate;
+  background: linear-gradient(
+    to right,
+    var(--white),
+    var(--white),
+    var(--white),
+    var(--white),
+    var(--white),
+    var(--color),
+    var(--white)
+  );
+  background-size: 200%;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  white-space: nowrap;
+}

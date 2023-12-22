@@ -9,7 +9,7 @@ const aBeeZee = ABeeZee({ subsets: ["latin"], weight: ["400"] });
 const About = () => {
   return (
     <div className={`${aBeeZee.style} bg-[#080609] text-gray-200`}>
-      <div className="mx-auto min-h-screen max-w-screen-lg">
+      <div className="mx-auto min-h-screen max-w-screen-lg px-0">
         <header className="py-10 text-center text-3xl font-bold md:mb-20 md:text-5xl">
           About Me
         </header>
@@ -39,7 +39,7 @@ const About = () => {
               alt="Nusab Taha's Profile Picture"
               width={200}
               height={200}
-              className="h-[200px] w-[200px] overflow-hidden rounded-[2.5em] opacity-0 transition-all duration-300 hover:scale-110"
+              className="z-auto h-[200px] w-[200px] overflow-hidden rounded-[2.5em] opacity-0 transition-all duration-300 hover:scale-110"
               onLoad={(e) => {
                 e.target.classList.add("opacity-100");
                 e.target.previousSibling.classList.add("opacity-0");

@@ -1,0 +1,78 @@
+/* The animation code */
+@keyframes move {
+  0% {
+    margin-bottom: 2rem;
+  }
+  100% {
+    margin-top: 2rem;
+  }
+}
+
+/* The element to apply the animation to */
+.circle1,
+.circle2 {
+  animation-name: move;
+  animation-duration: 900ms;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  animation-timing-function: ease-in-out;
+  animation-fill-mode: forwards;
+}
+.circle2 {
+  animation-delay: 300ms;
+}
+
+/* Continuously moving circles */
+
+@keyframes walk-around {
+  0% {
+    right: 3%;
+    bottom: 20%;
+    border-radius: 1px;
+    background-color: #00bbd4;
+    scale: 1.3 1.3;
+  }
+  25% {
+    right: 3%;
+    bottom: 80%;
+    border-radius: 9px;
+    background-color: #00d47f;
+    scale: 0.7 0.7;
+  }
+  50% {
+    right: 93%;
+    bottom: 80%;
+    border-radius: 1px;
+    background-color: #00e1ff;
+    scale: 1.3 1.3;
+  }
+  75% {
+    right: 93%;
+    bottom: 20%;
+    border-radius: 9px;
+    background-color: #00e5bf;
+    scale: 1 1;
+  }
+  100% {
+    right: 3%;
+    bottom: 20%;
+    border-radius: 1px;
+    background-color: #00bbd4;
+    scale: 0 0;
+  }
+}
+.moving-circles1 {
+  position: absolute;
+  animation-name: walk-around;
+  animation-duration: 7s;
+  animation-iteration-count: 1;
+  animation-timing-function: linear;
+  animation-fill-mode: forwards;
+}
+
+/* Large screens */
+@media screen and (min-width: 769px) {
+  .moving-circles1 {
+    animation-duration: 10s;
+  }
+}
