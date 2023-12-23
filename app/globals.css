@@ -8,3 +8,9 @@
   padding: 0;
   box-sizing: border-box;
 }
+
+textarea::-webkit-resizer {
+  border-width: 3.5px;
+  border-style: solid;
+  border-color: transparent #91a6b0 #91a6b0 transparent;
+}

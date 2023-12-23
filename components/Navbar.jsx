@@ -25,7 +25,7 @@ const Navbar = () => {
 
   return (
     <nav
-      className={`z-50 animation-all fixed flex h-16 w-full items-center gap-3 bg-[#f3f4f6] text-gray-900 duration-300 ${
+      className={`animation-all fixed z-50 flex h-16 w-full items-center gap-3 bg-[#f3f4f6] text-gray-900 duration-300 ${
         visible ? "" : "-translate-y-full"
       }`}
     >

@@ -1,14 +1,10 @@
 "use client";
-import { useState, useEffect } from "react";
-import { ABeeZee } from "next/font/google";
-import Link from "next/link";
-import Image from "next/image";
 
-const aBeeZee = ABeeZee({ subsets: ["latin"], weight: ["400"] });
+import Image from "next/image";
 
 const About = () => {
   return (
-    <div className={`${aBeeZee.style} bg-[#080609] text-gray-200`}>
+    <div className="bg-[#080609] text-gray-200">
       <div className="mx-auto min-h-screen max-w-screen-lg px-0">
         <header className="py-10 text-center text-3xl font-bold md:mb-20 md:text-5xl">
           About Me
