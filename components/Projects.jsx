@@ -1,6 +1,8 @@
 import Link from "next/link";
 import Image from "next/image";
 
+import Balancer from "react-wrap-balancer";
+
 import icons from "@helpers/icons";
 
 const Projects = () => {
@@ -52,7 +54,7 @@ const Projects = () => {
             technologies: ["python"],
             isImage: true,
             imageSrc: "/images/nekobin.jpg",
-            link: "https://pypi.org/project/pyNekobin/",
+            link: "https://nekobin.com/",
             github: "https://github.com/Nusab19/pyNekobin",
           })}
         </div>
@@ -124,7 +126,9 @@ function getProjectCard({
       </div>
       <div className="flex h-full flex-col gap-2">
         <h2 className="text-xl font-semibold">{title}</h2>
-        <p className="text-sm text-gray-400">{description} </p>
+        <p className="text-sm text-gray-400">
+          <Balancer>{description}</Balancer>
+        </p>
         <div className="mt-2 flex items-center gap-6 font-semibold">
           <Link
             href={link ?? "#"}
