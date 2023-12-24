@@ -89,6 +89,7 @@ function getProjectCard({
   for (const tech of technologies) {
     tools.push(
       <span
+        key={tech}
         className={`h-[20px] w-[20px] md:h-[27px] md:w-[27px] ${
           tech === "python" ? "mt-0.5" : ""
         }`}
