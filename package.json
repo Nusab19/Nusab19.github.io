@@ -12,7 +12,8 @@
     "next": "14.0.2",
     "react": "^18",
     "react-dom": "^18",
-    "react-wrap-balancer": "^1.1.0"
+    "react-wrap-balancer": "^1.1.0",
+    "sonner": "^1.2.4"
   },
   "devDependencies": {
     "autoprefixer": "^10.0.1",
