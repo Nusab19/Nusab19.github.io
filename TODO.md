@@ -4,3 +4,4 @@
 - Add contact infos
 - navbar intractable
 - add footer
+- compress profile picture
