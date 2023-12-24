@@ -66,7 +66,11 @@ const Footer = () => {
               </h2>
               <ul className="font-medium text-gray-400">
                 <li className="mb-4">
-                  <a href="#" className="hover:underline">
+                  <a
+                    href="/assets/files/cv.pdf"
+                    target="_blank"
+                    className="hover:underline"
+                  >
                     CV
                   </a>
                 </li>

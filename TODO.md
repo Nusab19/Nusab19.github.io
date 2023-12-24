@@ -1,4 +1,2 @@
 - Add Markdown support
-- Add contact infos
 - navbar intractable
-- add footer
