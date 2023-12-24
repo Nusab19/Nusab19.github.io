@@ -1,5 +1,6 @@
+export const runtime = "edge";
+
 import { NextResponse } from "next/server";
-import { stringify } from "postcss";
 
 const URL1 = process.env.URL1;
 const URL2 = process.env.URL2;

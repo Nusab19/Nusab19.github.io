@@ -1,7 +1,4 @@
 - Add Markdown support
-- Add Tab support
-- Do backend of contact
 - Add contact infos
 - navbar intractable
 - add footer
-- compress profile picture
