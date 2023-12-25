@@ -1,0 +1,48 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  /* font-family: Tahoma, Verdana, sans-serif; */
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+textarea::-webkit-resizer {
+  border-width: 3.5px;
+  border-style: solid;
+  border-color: transparent #91a6b0 #91a6b0 transparent;
+}
+
+/*
+----------------------------------------
+
+    Custom ScrollBar -> @Nusab19
+    Email   : nusabtaha33@gmail.com
+    Website : https://nusab19.pages.dev/
+
+----------------------------------------
+
+*/
+
+/* width */
+::-webkit-scrollbar {
+  width: 13px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #113948;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #5a7995;
+  border-radius: 7px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #49a8fc;
+}
