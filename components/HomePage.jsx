@@ -27,19 +27,19 @@ const HomePage = () => {
         </div>
       </div>
 
-      <span className="absolute top-[20vh] -translate-x-1/2 text-[#00d49f]">
+      <span className="absolute top-[20vh] -translate-x-1/2 text-[#00d49f] come-in">
         {blob}
       </span>
-      <span className="absolute bottom-[23vh] left-[13vw] text-[#dad7cd]">
+      <span className="absolute bottom-[23vh] left-[13vw] text-[#dad7cd] come-in">
         {blob}
       </span>
-      <span className="absolute bottom-[10vh] right-[20vw] text-[#f35f5f]">
+      <span className="absolute bottom-[10vh] right-[20vw] text-[#f35f5f] come-in">
         {blob}
       </span>
-      <span className="absolute right-[30vw] top-[15vh] text-[#219ebc]">
+      <span className="absolute right-[30vw] top-[15vh] text-[#219ebc] come-in">
         {blob}
       </span>
-      <span className="absolute right-0 top-[40vh] translate-x-1/2 text-[#8d99ae]">
+      <span className="absolute right-0 top-[40vh] translate-x-1/2 text-[#8d99ae] come-in">
         {blob}
       </span>
     </div>

@@ -1,4 +1,6 @@
 .env
+package-lock.json
+TODO.md
 
 # dependencies
 /node_modules

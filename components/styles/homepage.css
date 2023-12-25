@@ -34,3 +34,14 @@
   -webkit-text-fill-color: transparent;
   white-space: nowrap;
 }
+
+@keyframes fall {
+  0% {
+    transform: translateY(-2rem);
+  }
+}
+
+.come-in {
+  animation: fall 1000ms ease-in-out;
+  animation-delay: 50ms;
+}
