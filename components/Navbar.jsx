@@ -30,7 +30,9 @@ const Navbar = () => {
       }`}
     >
       <span className="circle1 ml-5 h-4 w-4 rounded-full bg-[#00d49f] md:h-5 md:w-5"></span>
-      <Link href="/">{icons.logo}</Link>
+      <Link href="/" title="Homepage Logo">
+        {icons.logo}
+      </Link>
       <span className="circle2 h-4 w-4 rounded-full bg-[#00bbd4] md:h-5 md:w-5"></span>
 
       {/* <button className="absolute right-7">{icons.burgerMenu}</button> */}
