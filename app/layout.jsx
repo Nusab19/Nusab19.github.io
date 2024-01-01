@@ -27,10 +27,10 @@ export const metadata = {
   title: title,
   description: description,
   keywords: keywords,
-  openGraph: {
-    title: title,
-    description: description,
-    url: url,
-    images: ["https://contest-hive.vercel.app/opengraph-image.png"],
-  },
+  // openGraph: {
+  //   title: title,
+  //   description: description,
+  //   url: url,
+  //   images: ["https://contest-hive.vercel.app/opengraph-image.png"],
+  // },
 };
