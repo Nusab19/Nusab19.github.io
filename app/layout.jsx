@@ -3,6 +3,14 @@ import "./globals.css";
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
+      <head>
+        <meta property="og:title" content={metadata.title} />
+        <meta property="og:description" content={metadata.description} />
+        <meta property="og:type" content="website" />
+        <meta property="og:url" content="https://nusab19.pages.dev/" />
+        <meta property="og:image" content="/og.png" />
+        <meta property="og:image:alt" content={metadata.title} />
+      </head>
       <body>{children}</body>
     </html>
   );

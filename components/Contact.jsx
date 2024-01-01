@@ -147,13 +147,12 @@ export default Contact;
 
 async function sendMessage({ name, message }) {
   const jsonData = { name, message };
-  const res = await fetch("https://nusab19.pages.dev/api/sendMessage", {
+  const res = await fetch("/api/sendMessage", {
     method: "POST",
     headers: {
       "Content-Type": "application/json",
     },
     body: JSON.stringify(jsonData),
-    
   });
   const resp = await res.json();
   if (!resp.ok) throw new Error(resp.message);
