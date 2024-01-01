@@ -8,14 +8,8 @@ export default function RootLayout({ children }) {
         <meta property="og:description" content={metadata.description} />
         <meta property="og:type" content="website" />
         <meta property="og:url" content="https://nusab19.pages.dev/" />
-        <meta property="og:image" content="/og.png" />
+        <meta property="og:image" content="/images/og.png" />
         <meta property="og:image:alt" content={metadata.title} />
-        <meta name="twitter:card" content="summary_large_image" />
-        <meta property="twitter:domain" content="nusab19.pages.dev" />
-        <meta property="twitter:url" content="https://nusab19.pages.dev/" />
-        <meta name="twitter:title" content={metadata.title} />
-        <meta name="twitter:description" content={metadata.description} />
-        <meta name="twitter:image" content="/images/og.png" />
       </head>
       <body>{children}</body>
     </html>
