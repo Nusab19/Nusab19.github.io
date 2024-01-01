@@ -1,4 +1,4 @@
-# Welcome to my portfolio!
+# Welcome to my portfolio! (Static)
 
 My name is Nusab Taha, and I'm a programmer based in Bangladesh.
 
