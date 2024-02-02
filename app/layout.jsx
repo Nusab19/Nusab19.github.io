@@ -10,6 +10,7 @@ export default function RootLayout({ children }) {
         <meta property="og:url" content="https://nusab19.pages.dev/" />
         <meta property="og:image" content="/images/og.png" />
         <meta property="og:image:alt" content={metadata.title} />
+        <meta name="google-site-verification" content="WPPXho-ehsTzL41OYAECiVP8ilWMxfxjHtHwQUsu1FU" />
       </head>
       <body>{children}</body>
     </html>
