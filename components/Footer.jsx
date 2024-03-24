@@ -67,7 +67,7 @@ const Footer = () => {
               <ul className="font-medium text-gray-400">
                 <li className="mb-4">
                   <a
-                    href="/assets/files/cv.pdf"
+                    // href="/assets/files/cv.pdf"
                     target="_blank"
                     className="hover:underline"
                   >
