@@ -33,7 +33,7 @@ const Projects = () => {
             link: "https://toph.pages.dev/",
             github: "https://github.com/Nusab19/Toph-Leaderborad",
             isImage: true,
-            imageSrc: "/images/tophleaderboard.svg",
+            imageSrc: "/images/toph.svg",
           })}
 
           {getProjectCard({
@@ -133,14 +133,14 @@ function getProjectCard({
           <Link
             href={link ?? "#"}
             target="_blank"
-            className="text-sm text-blue-400 opacity-80 transition-opacity duration-300 hover:opacity-100"
+            className="transition-color rounded-md bg-[#eaeaea] px-2 py-1 text-sm  text-[#111111] duration-200 hover:bg-[#111111] hover:text-[#ffffff]"
           >
             Website
           </Link>
           <Link
             href={github ?? "#"}
             target="_blank"
-            className="text-sm text-blue-400 opacity-80 transition-opacity duration-300 hover:opacity-100"
+            className="hover:bg- transition-color rounded-md bg-[#111111] px-2 py-1 text-sm text-[#ffffff] duration-200 hover:bg-[#eaeaea] hover:text-[#111111]"
           >
             GitHub
           </Link>
