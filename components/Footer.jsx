@@ -33,7 +33,7 @@ const socialLinks = [
 
 const Footer = () => {
   return (
-    <footer className="bg-[#0e1b1e]">
+    <footer className="bg-[#131619]">
       <div className="mx-auto w-full max-w-screen-xl p-4 py-6 lg:py-8">
         <div className="md:flex md:justify-between">
           <div className="mb-6 flex flex-col md:mb-0">

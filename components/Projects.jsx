@@ -7,7 +7,7 @@ import icons from "@helpers/icons";
 
 const Projects = () => {
   return (
-    <div className="bg-[#010e17] pb-20 text-gray-100">
+    <div className="bg-[#0b0b10] pb-20 text-gray-100">
       <div className="mx-auto max-w-screen-lg px-0 pb-40 pt-10">
         <header className="py-10 text-center text-3xl font-bold md:mb-20 md:text-5xl">
           Projects
@@ -104,7 +104,7 @@ function getProjectCard({
   const img = isImage ?? "svg";
 
   return (
-    <div className="flex items-center gap-7 rounded-lg bg-[#0b1822] p-5">
+    <div className="flex items-center gap-7 rounded-lg bg-[#0d1117] p-5">
       <div className="flex min-w-[60px] flex-col items-center justify-center gap-3 md:min-w-[100px]">
         {img === "svg" ? (
           <span className="h-[60px] w-[60px] md:h-[80px] md:w-[80px]">

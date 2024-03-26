@@ -35,7 +35,7 @@ const Contact = () => {
   }, []);
 
   return (
-    <div className="bg-[#001219] text-gray-100">
+    <div className="bg-[#0c0c14] text-gray-100">
       <Toaster closeButton richColors visibleToasts={2} />
       <div className="mx-auto max-w-screen-lg px-0 pb-40 pt-10">
         <header className="py-10 text-center text-3xl font-bold md:mb-20 md:text-5xl">
@@ -85,7 +85,7 @@ const Contact = () => {
               </label>
             </div>
 
-            <div className="mb-4 w-full rounded-lg border border-gray-950 bg-[#1e2529]">
+            <div className="mb-4 w-full rounded-lg border border-gray-950 bg-[#1b1e20]">
               <div className="rounded-t-lg bg-[#2b363b] px-4 py-2">
                 <label htmlFor="message" className="sr-only">
                   Your Message
