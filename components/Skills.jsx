@@ -16,8 +16,8 @@ function getSkillItem(text, iconName) {
 const Skills = () => {
   return (
     <div className={`${aBeeZee.style} bg-[#131319] pb-20 text-gray-200`}>
-      <div className="mx-auto min-h-screen max-w-screen-lg px-2 md:px-0">
-        <header className="pt-10 text-center text-3xl font-bold md:mb-20 mb-10 md:text-5xl">
+      <div className="mx-auto max-w-screen-lg px-2 pb-40 pt-10 md:px-0">
+        <header className="mb-10 pt-10 text-center text-3xl font-bold md:mb-20 md:text-5xl">
           Skills
         </header>
         <div className="grid grid-cols-2 gap-5 md:grid-cols-3 lg:grid-cols-4">

@@ -37,7 +37,7 @@ const Contact = () => {
   return (
     <div className="bg-[#001219] text-gray-100">
       <Toaster closeButton richColors visibleToasts={2} />
-      <div className="mx-auto min-h-screen max-w-screen-lg px-0">
+      <div className="mx-auto max-w-screen-lg px-0 pb-40 pt-10">
         <header className="py-10 text-center text-3xl font-bold md:mb-20 md:text-5xl">
           Contact Me
         </header>

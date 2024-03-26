@@ -6,7 +6,7 @@ import Balancer from "react-wrap-balancer";
 const About = () => {
   return (
     <div className="bg-[#080609] text-gray-200">
-      <div className="mx-auto min-h-screen max-w-screen-lg px-0">
+      <div className="mx-auto max-w-screen-lg px-0 pb-40 pt-10">
         <header className="py-10 text-center text-3xl font-bold md:mb-20 md:text-5xl">
           About Me
         </header>
@@ -22,7 +22,7 @@ const About = () => {
                 Back End Development and Problem Solving.
               </Balancer>
               <span className="mt-3 block font-mono opacity-50">
-                CSS is tough! -.-
+                CSS is kinda tough! -.-
               </span>
             </span>
           </span>
