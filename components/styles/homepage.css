@@ -41,7 +41,21 @@
   }
 }
 
+@keyframes blurAndFade {
+  0% {
+    filter: blur(5px);
+  }
+  100% {
+    filter: blur(15px);
+  }
+}
+
 .come-in {
   animation: fall 1000ms ease-in-out;
   animation-delay: 50ms;
+}
+
+.come-in-1 {
+  animation: blurAndFade 5000ms ease-in-out infinite;
+  animation-direction: alternate;
 }
