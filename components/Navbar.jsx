@@ -9,7 +9,6 @@ import "@components/styles/nav.css";
 const Navbar = () => {
   const [prevScrollPos, setPrevScrollPos] = useState(0);
   const [visible, setVisible] = useState(true);
-
   useEffect(() => {
     // Hide/Show Navbar on scroll
     const handleScroll = () => {

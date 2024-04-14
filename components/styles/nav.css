@@ -19,8 +19,11 @@
   animation-fill-mode: forwards;
 }
 .circle2 {
-  animation-delay: 300ms;
+  /* animation-delay: 300ms; */
+  animation-duration: 1000ms;
+
 }
+
 
 /* Continuously moving circles */
 
