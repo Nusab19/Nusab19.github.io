@@ -37,25 +37,19 @@
 
 @keyframes fall {
   0% {
-    transform: translateY(-2rem);
+    transform: translateY(-7rem);
   }
-}
-
-@keyframes blurAndFade {
-  0% {
-    filter: blur(5px);
+  50% {
+    transform: translateY(-3rem);
   }
   100% {
-    filter: blur(15px);
+    filter: blur(11px);
   }
 }
 
 .come-in {
   animation: fall 1000ms ease-in-out;
   animation-delay: 50ms;
-}
-
-.come-in-1 {
-  animation: blurAndFade 5000ms ease-in-out infinite;
+  animation-fill-mode: forwards;
   animation-direction: alternate;
 }
