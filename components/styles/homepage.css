@@ -53,3 +53,25 @@
   animation-fill-mode: forwards;
   animation-direction: alternate;
 }
+
+@media only screen and (max-width: 768px) {
+  /* CSS properties for small devices (up to 768px) */
+  .come-in {
+    animation: fall 1000ms ease-in-out;
+    animation-delay: 50ms;
+    animation-fill-mode: forwards;
+    animation-direction: alternate;
+  }
+
+  @keyframes fall {
+    0% {
+      transform: translateY(-7rem);
+    }
+    50% {
+      transform: translateY(-3rem);
+    }
+    100% {
+      filter: blur(7px);
+    }
+  }
+}
