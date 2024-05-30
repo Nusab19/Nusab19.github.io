@@ -81,7 +81,7 @@ const Contact = () => {
                 className="absolute start-1 top-2 z-10 origin-[0] -translate-y-8 transform px-2 text-sm text-gray-400
                 duration-300 peer-placeholder-shown:top-1/2 peer-placeholder-shown:-translate-y-1/2 peer-placeholder-shown:scale-100 peer-placeholder-shown:px-4 peer-focus:top-2 peer-focus:-translate-y-8 peer-focus:px-2 rtl:peer-focus:left-auto rtl:peer-focus:translate-x-1/4"
               >
-                Name
+                Name (Optional)
               </label>
             </div>
 

@@ -133,14 +133,14 @@ function getProjectCard({
           <Link
             href={link ?? "#"}
             target="_blank"
-            className="transition-color rounded-md bg-[#eaeaea] px-2 py-1 text-sm  text-[#171717] duration-200 hover:bg-[#171717] hover:text-[#ffffff]"
+            className="transition-color rounded-md bg-[#eaeaea] px-2 py-1 text-sm  text-[#172327] duration-200 hover:bg-[#172327] hover:text-[#ffffff]"
           >
             Website
           </Link>
           <Link
             href={github ?? "#"}
             target="_blank"
-            className="hover:bg- transition-color rounded-md bg-[#171717] px-2 py-1 text-sm text-[#ffffff] duration-200 hover:bg-[#eaeaea] hover:text-[#171717]"
+            className="hover:bg- transition-color rounded-md bg-[#172327] px-2 py-1 text-sm text-[#ffffff] duration-200 hover:bg-[#eaeaea] hover:text-[#172327]"
           >
             GitHub
           </Link>

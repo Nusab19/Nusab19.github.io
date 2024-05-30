@@ -30,12 +30,12 @@ const About = () => {
               alt="Nusab Taha's Profile Picture"
               width={200}
               height={200}
-              className="z-auto h-[200px] w-[200px] overflow-hidden rounded-[2.5em] transition-all duration-300 hover:scale-110"
-              priority={true}
+              className="z-auto h-[200px] w-[200px] overflow-hidden rounded-[2.5em] transition-transform duration-200 hover:scale-105"
+              priority
             />
-            <span className="flex flex-col items-center justify-center">
+            <span className="flex flex-col items-center justify-center text-center">
               <span className="text-2xl font-bold">Nusab Taha</span>
-              <span className="text-sm font-semibold text-gray-300">
+              <span className="text-sm font-semibold text-gray-300 text-opacity-80 tracking-tight">
                 Full Stack Developer
               </span>
             </span>
