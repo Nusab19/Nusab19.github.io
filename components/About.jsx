@@ -35,7 +35,7 @@ const About = () => {
             />
             <span className="flex flex-col items-center justify-center text-center">
               <span className="text-2xl font-bold">Nusab Taha</span>
-              <span className="text-sm font-semibold text-gray-300 text-opacity-80 tracking-tight">
+              <span className="text-sm font-semibold tracking-tight text-gray-300 text-opacity-80">
                 Full Stack Developer
               </span>
             </span>
