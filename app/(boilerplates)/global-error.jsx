@@ -2,7 +2,7 @@
 import { useEffect } from 'react'
 
 export const runtime = "edge";
- 
+
 export default function Error({ error, reset }) {
   useEffect(() => {
     // Log the error to an error reporting service
