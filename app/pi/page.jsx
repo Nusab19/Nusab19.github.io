@@ -18,8 +18,8 @@ const PI = () => {
         <h2 className="my-2 text-2xl font-bold underline underline-offset-8 md:text-4xl">
           Why?
         </h2>
-        <p className="ml-2 font-semibold md:text-lg">
-          I like numbers. For a time, I have been memorizing the digits of{" "}
+        <p className="ml-2 md:text-lg">
+          I like numbers. So, I have been memorizing the digits of{" "}
           <span className="font-bold">π</span> for a while. I know this is entirely unnecessary.
           <br />
           <span className="font-bold">However</span>, I simply find pleasure in doing so. So, please
