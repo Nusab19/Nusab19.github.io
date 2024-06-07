@@ -7,7 +7,7 @@ import icons from "@helpers/icons";
 
 const Projects = () => {
   return (
-    <div className="bg-[#0b0b10] pb-20 text-gray-100">
+    <div className="bg-[#0b0b10] text-gray-100 md:pb-20">
       <div className="mx-auto max-w-screen-lg px-0 pb-40 pt-10">
         <header className="py-10 text-center text-3xl font-bold md:mb-20 md:text-5xl">
           Projects
