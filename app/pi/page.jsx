@@ -20,10 +20,12 @@ const PI = () => {
         </h2>
         <p className="ml-2 md:text-lg">
           I like numbers. So, I have been memorizing the digits of{" "}
-          <span className="font-bold">π</span> for a while. I know this is entirely unnecessary.
+          <span className="font-bold">π</span> for a while. I know this is
+          entirely unnecessary.
           <br />
-          <span className="font-bold">However</span>, I simply find pleasure in doing so. So, please
-          don&apos;t mind my <span className="font-bold">peculiar</span> hobby. :3
+          <span className="font-bold">However</span>, I simply find pleasure in
+          doing so. So, please don&apos;t mind my{" "}
+          <span className="font-bold">peculiar</span> hobby. :3
         </p>
         <p className="my-2 ml-3 text-sm font-bold tracking-wider">
           Nusab Taha

@@ -52,6 +52,7 @@
   animation-delay: 50ms;
   animation-fill-mode: forwards;
   animation-direction: alternate;
+  animation-delay: 1ms;
 }
 
 @media only screen and (max-width: 768px) {
