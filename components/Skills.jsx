@@ -6,8 +6,8 @@ const aBeeZee = ABeeZee({ subsets: ["latin"], weight: ["400"] });
 
 function getSkillItem(text, iconName) {
   return (
-    <div className="flex cursor-pointer select-none flex-col items-center justify-center gap-3 rounded-md bg-[#1e1e25] py-8 transition-transform duration-200 ease-in-out hover:scale-95">
-      <span className="h-[60px] w-[60px]">{icons[iconName]}</span>
+    <div className="flex cursor-pointer select-none flex-col items-center justify-center gap-3 rounded-md bg-[#1e1e25] py-5 md:py-8 transition-transform duration-200 ease-in-out hover:scale-95">
+      <span className="h-[40px] w-[40px] md:h-[60px] md:w-[60px]">{icons[iconName]}</span>
       {text}
     </div>
   );
@@ -16,11 +16,11 @@ function getSkillItem(text, iconName) {
 const Skills = () => {
   return (
     <div className={`${aBeeZee.style} bg-[#131319] pb-20 text-gray-200`}>
-      <div className="mx-auto max-w-screen-lg px-2 pb-40 pt-10 md:px-0">
+      <div className="mx-auto max-w-screen-lg px-2 md:pb-40 pb-10 pt-10 md:px-0">
         <header className="mb-10 pt-10 text-center text-3xl font-bold md:mb-20 md:text-5xl">
           Skills
         </header>
-        <div className="grid grid-cols-2 gap-5 text-xs font-semibold text-gray-300 md:grid-cols-3 lg:grid-cols-4">
+        <div className="grid grid-cols-3 gap-5 text-xs font-semibold text-gray-300 md:grid-cols-3 lg:grid-cols-4">
           {getSkillItem("Python", "python")}
           {getSkillItem("Next.js", "nextjs")}
           {getSkillItem("React", "react")}
