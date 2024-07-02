@@ -1,9 +1,7 @@
 export const runtime = "edge";
 
-import { NextResponse } from "next/server;
+import { NextResponse } from "next/server";
 
-const URL1 = process.env.URL1;
-const URL2 = process.env.URL2;
 
 export async function POST(req) {
   const jsonData = await req.json();
