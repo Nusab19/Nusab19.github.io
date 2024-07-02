@@ -7,6 +7,8 @@ export async function POST(req) {
   const jsonData = await req.json();
   const ip = req.headers.get("x-real-ip") ?? "127.0.0.1";
   const url = String(jsonData.url || "").trim();
+
+  return new NextResponse(JSON.stringify({message:" Hello"}), { status: 200 });
   
   if(url == ''){
       let resp = {
