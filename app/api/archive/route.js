@@ -18,7 +18,7 @@ export async function POST(req) {
   }
   
   let endpoint = `https://web.archive.org/save/${url}`
-  let reap = await fetch('https://httpbin.org/post');
+  let resp = await fetch(endpoint);
   
   return new NextResponse(JSON.stringify(resp.data()), { status: resp.status });
 }
