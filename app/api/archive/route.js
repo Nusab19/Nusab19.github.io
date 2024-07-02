@@ -7,8 +7,9 @@ export async function POST(req) {
   const jsonData = await req.json();
   const ip = req.headers.get("x-real-ip") ?? "127.0.0.1";
   const url = decodeURI((jsonData.url || "").trim());
-  console.log(url)
-  return new NextResponse(JSON.stringify({message:" Hello", ip, params:req.params}), { status: 200 });
+  const res = await fetch("https://httpbin.org/ip")
+  const data = res.json()
+  return new NextResponse(JSON.stringify({message:" Hello", ip, dara}), { status: 200 });
   
   if(url == ''){
       let resp = {
