@@ -2,6 +2,7 @@ import { NextRequest } from "next/server";
 import { JsonResponse } from "../default";
 
 export const runtime = "edge";
+const PASS = process.env.PASS;
 
 export async function POST(req: NextRequest) {
   const ip = req.headers.get("x-real-ip") ?? "127.0.0.1";
@@ -20,6 +21,16 @@ export async function POST(req: NextRequest) {
     return JsonResponse(data, 400);
   }
   const url = jsonData.url;
+  const pass = jsonData.pass;
+  if (pass !== PASS) {
+    const data = {
+      ok: false,
+      message: "Invalid password",
+      ip,
+      serverIP,
+    };
+    return JsonResponse(data, 401);
+  }
 
   if (url == "") {
     let resp = {
