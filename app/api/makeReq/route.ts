@@ -14,7 +14,8 @@ const PASS = process.env.PASS;
 
 export async function POST(req: NextRequest) {
   /*    Request body:
-  {
+    {
+    "pass":"ADMIN_PASS",
     "url": "https://example.com",
     "method": "GET", // Optional (default: "GET")
     "headers": {} // Optional (default: {})
@@ -42,6 +43,16 @@ export async function POST(req: NextRequest) {
     const data = {
       ok: false,
       message: "Invalid JSON",
+      ip,
+      serverIP,
+    };
+    return JsonResponse(data, 400);
+  }
+  const password = jsonData.pass;
+  if (password !== PASS) {
+    const data = {
+      ok: false,
+      message: "Invalid password",
       ip,
       serverIP,
     };
