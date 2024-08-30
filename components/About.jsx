@@ -30,7 +30,7 @@ const About = () => {
               alt="Nusab Taha"
               width={200}
               height={200}
-              className="z-auto h-[200px] w-[200px] overflow-hidden rounded-[2.5em] transition-transform duration-200 hover:scale-105"
+              className="z-auto h-[200px] w-[200px] overflow-hidden rounded-[2.5em] transition-transform duration-200 hover:scale-105 cursor-pointer"
               priority
             />
             <span className="flex flex-col items-center justify-center text-center">
