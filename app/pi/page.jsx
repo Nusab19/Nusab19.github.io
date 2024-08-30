@@ -1,22 +1,30 @@
-import Head from "next/head";
-
 export const metadata = {
   title: "100 digits of π",
+  description: "100 digits of π by Nusab Taha",
+  keywords: "π, pi, 100 digits of pi, 100 digits of π, Nusab Taha",
 };
 
 const PI = () => {
   return (
     <div className="mx-4">
-      <h1 className="my-5 text-3xl font-bold underline underline-offset-8 md:my-10 md:text-5xl">
+      <h1 className="w-fit text-3xl font-semibold md:my-10 md:text-5xl lg:text-7xl">
         100 digits of π
+        <span className="mt-5 block h-1 w-full bg-gray-700"></span>
       </h1>
-      <p className="mx-1 font-mono text-lg font-semibold md:text-xl">
-        3.14159 2653589 7932384626 4338 3279502 8841971 6939937 5105820 9749445
-        9230781 6406286 2089986 2803482 5342117 0679
+      <p className="mx-1 font-mono text-lg font-semibold md:text-2xl lg:text-4xl">
+        <span className="text-emerald-500">
+          3.14159 2653589 7932384626 4338
+        </span>{" "}
+        <span className="text-teal-600">3279502</span>{" "}
+        <span className="bg-gradient-to-r from-sky-500 via-purple-600 to-fuchsia-600 bg-clip-text text-transparent">
+          8841971 6939937 5105820 9749445 9230781 6406286 2089986 2803482
+          5342117 0679
+        </span>
       </p>
       <div className="my-20">
-        <h2 className="my-2 text-2xl font-bold underline underline-offset-8 md:text-4xl">
+        <h2 className="my-2 w-fit text-2xl font-semibold md:text-4xl lg:text-5xl">
           Why?
+          <span className="mt-5 block h-0.5 w-full bg-gray-700"></span>
         </h2>
         <p className="ml-2 md:text-lg">
           I like numbers. So, I have been memorizing the digits of{" "}
