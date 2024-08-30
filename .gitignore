@@ -1,6 +1,8 @@
 .env
 package-lock.json
 TODO.md
+test*
+
 
 # dependencies
 /node_modules
