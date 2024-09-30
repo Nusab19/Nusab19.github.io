@@ -6,12 +6,12 @@ export const metadata = {
 
 const PI = () => {
   return (
-    <div className="mx-4">
-      <h1 className="w-fit text-3xl font-semibold md:my-10 md:text-5xl lg:text-7xl">
+    <div className="mx-4 my-5">
+      <h1 className="w-fit text-3xl font-semibold md:my-10 md:text-5xl lg:text-7xl my-5">
         100 digits of π
-        <span className="mt-5 block h-1 w-full bg-gray-700"></span>
+        <span className="md:mt-5 mt-2 block h-1 w-full bg-gray-700"></span>
       </h1>
-      <p className="mx-1 font-mono text-lg font-semibold md:text-2xl lg:text-4xl">
+      <p className="mx-1 font-mono text-lg font-bold md:text-2xl lg:text-4xl">
         <span className="text-emerald-500">
           3.14159 2653589 7932384626 4338
         </span>{" "}
