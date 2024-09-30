@@ -24,7 +24,7 @@ const PI = () => {
       <div className="my-20">
         <h2 className="my-2 w-fit text-2xl font-semibold md:text-4xl lg:text-5xl">
           Why?
-          <span className="mt-5 block h-0.5 w-full bg-gray-700"></span>
+          <span className="mt-1.5 md:mt-4 block h-0.5 w-full bg-gray-700"></span>
         </h2>
         <p className="ml-2 md:text-lg">
           I like numbers. So, I have been memorizing the digits of{" "}
