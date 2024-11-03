@@ -17,9 +17,9 @@ export default function RootLayout({ children }) {
   );
 }
 
-const title = "Nusab Taha - Portfolio";
+const title = "Nusab Taha - Full Stack Developer";
 const description =
-  "Nusab Taha, a full-stack developer from Bangladesh building things with (& for) the open-source project. Building the web with React, Next.js, and Tailwind CSS.";
+  "I'm Nusab Taha, a full-stack developer from Bangladesh who's building the web with React, Next.js, and Tailwind.";
 const keywords =
   "nusab, nusab taha, nusab19, nusab yaha, musab taha, contest hive, toph leaderboard, nusab taha telegram, nusab taha portfolio, pynekobin, al quran bot telegram";
 const url = "https://nusab19.pages.dev/";
