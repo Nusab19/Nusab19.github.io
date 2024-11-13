@@ -10,17 +10,16 @@ const About = () => {
         </header>
         <div className="flex flex-col-reverse items-center justify-center md:flex-row lg:justify-between">
           <span className="px-4 py-10 leading-relaxed tracking-wide md:w-2/3 md:text-xl md:leading-relaxed">
-            I’m a 11th grade student from Bangladesh who loves to make
-            interesting stuff using code.
-            <br />I love open-source and I try to contribute to it as much as I
-            can.
+            I&apos;m an 12th-grade student based in Bangladesh, specializing in <b>TypeScript</b>, <b>React</b>, <b>Next.js</b>, and <b><i>Python</i></b>.
+            <br />
             <span className="mt-5 block text-sm md:text-base">
               <Balancer>
-                Even though I&apos;m a Full Stack Developer, I&apos;m more into
-                Back End Development and Problem Solving.
+                As a Full Stack Developer with a strong focus on back-end development and problem-solving, I&apos;m dedicated to building robust, efficient applications.
+                <br/>
+                I'm also an active contributor to open-source projects.
               </Balancer>
               <span className="mt-3 block font-mono opacity-50">
-                CSS is kinda tough! -.-
+                CSS is kinda tough tho! -.-
               </span>
             </span>
           </span>
