@@ -14,9 +14,8 @@ const About = () => {
             <br />
             <span className="mt-5 block text-sm md:text-base">
               <Balancer>
-                As a Full Stack Developer with a strong focus on back-end development and problem-solving, I&apos;m dedicated to building robust, efficient applications.
-                <br/>
-                I&apos;m also an active contributor to open-source projects.
+                Although I&apos; a full-stack developer, I have a strong preference for backend development over frontend.
+                My focus is on building reliable and high-performance software solutions.
               </Balancer>
               <span className="mt-3 block font-mono opacity-50">
                 CSS is kinda tough tho! -.-
