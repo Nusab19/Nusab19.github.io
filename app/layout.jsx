@@ -19,7 +19,7 @@ export default function RootLayout({ children }) {
 
 const title = "Nusab Taha - Full Stack Developer";
 const description =
-  "I'm Nusab Taha, a full-stack developer from Bangladesh who's building the web with React, Next.js, and Tailwind.";
+  "I'm Nusab Taha, a full-stack software engineer from Bangladesh who's building the web with React, Next.js, and Tailwind.";
 const keywords =
   "nusab, nusab taha, nusab19, contest hive, toph leaderboard, nusab taha portfolio, al quran bot telegram";
 const url = "https://nusab19.pages.dev/";

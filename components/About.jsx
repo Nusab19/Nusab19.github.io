@@ -32,9 +32,9 @@ const About = () => {
               priority
             />
             <span className="flex flex-col items-center justify-center text-center">
-              <span className="text-2xl font-bold">Nusab Taha</span>
-              <span className="text-sm font-semibold tracking-tight text-gray-300 text-opacity-80">
-                Full Stack Developer
+              <span className="text-2xl font-bold tracking-wider">Nusab Taha</span>
+              <span className="text-sm font-semibold tracking-tighter text-gray-300 text-opacity-80">
+              Full-Stack Software Engineer
               </span>
             </span>
           </span>
