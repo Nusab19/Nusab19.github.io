@@ -1,4 +1,5 @@
 User-Agent: *
 Allow: /
+Disallow: /api/
 
 Sitemap: https://nusab19.pages.dev/sitemap.xml
