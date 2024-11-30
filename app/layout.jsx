@@ -4,9 +4,13 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <head>
+        <link rel="canonical" href="https://nusab19.pages.dev/" />
         <meta property="og:type" content="website" />
         <meta property="og:image:alt" content={metadata.title} />
-        <meta name="google-site-verification" content="WPPXho-ehsTzL41OYAECiVP8ilWMxfxjHtHwQUsu1FU" />
+        <meta
+          name="google-site-verification"
+          content="WPPXho-ehsTzL41OYAECiVP8ilWMxfxjHtHwQUsu1FU"
+        />
       </head>
       <body>{children}</body>
     </html>
