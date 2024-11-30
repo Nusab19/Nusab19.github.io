@@ -25,6 +25,7 @@ const keywords =
 const url = "https://nusab19.pages.dev/";
 
 export const metadata = {
+  metadataBase: new URL("https://nusab19.pages.dev/"),
   title: title,
   description: description,
   keywords: keywords,
