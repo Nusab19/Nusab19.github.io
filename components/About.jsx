@@ -14,7 +14,7 @@ const About = () => {
             <br />
             <span className="mt-5 block text-sm md:text-base">
               <Balancer>
-                Although I&apos; a full-stack developer, I have a strong preference for backend development over frontend.
+                Although I&apos;m a full-stack developer, I have a strong preference for backend development over frontend.
                 My focus is on building reliable and high-performance software solutions.
               </Balancer>
               <span className="mt-3 block font-mono opacity-50">
