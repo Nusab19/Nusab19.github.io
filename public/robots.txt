@@ -1,5 +1,6 @@
 User-Agent: *
 Allow: /
 Disallow: /api/
+Disallow: /bloodList
 
 Sitemap: https://nusab19.pages.dev/sitemap.xml
