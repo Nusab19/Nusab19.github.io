@@ -41,7 +41,7 @@ export default function BloodPage() {
       </div>
 
       <div className="absolute top-16 md:top-11 lg:top-12">
-        <p className="blood-text-shadow text-3xl font-black text-[hsl(0,66%,52%)] md:text-6xl lg:md:text-7xl">
+        <p className="blood-text-shadow text-3xl font-black text-gray-200 md:text-6xl lg:md:text-7xl">
           Blood List of Hostel
         </p>
       </div>
