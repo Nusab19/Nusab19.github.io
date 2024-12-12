@@ -12,7 +12,7 @@ export default function BloodPage() {
   }, []);
 
   return (
-    <div className="relative flex min-h-screen items-center justify-center overflow-hidden bg-black">
+    <div className="relative flex h-[100vh] items-center justify-center overflow-hidden bg-black">
       {/* Animated background */}
       <div className="absolute inset-0 z-0">
         {[...Array(13)].map((_, i) => (
@@ -40,16 +40,11 @@ export default function BloodPage() {
         ))}
       </div>
 
-      <div className="absolute top-16 md:top-11 lg:top-12">
+      <div className="absolute top-16 md:top-11 lg:top-12 flex flex-col items-center justify-center md:gap-40 gap-52">
         <p className="blood-text-shadow text-3xl font-black text-gray-200 md:text-6xl lg:md:text-7xl">
           Blood List of Hostel
         </p>
-      </div>
-
-      <div className="absolute h-28 w-28 select-none rounded-full bg-red-600/20 md:h-32 md:w-32" />
-
-      {/* Button */}
-      <motion.div
+        <motion.div
         initial={{ scale: 0 }}
         animate={{ scale: 1 }}
         transition={{
@@ -69,15 +64,15 @@ export default function BloodPage() {
             className="group relative z-10 w-full overflow-hidden px-6 py-3 text-base font-semibold sm:w-auto sm:text-lg"
           >
             <span className="relative z-10">See the Blood Sheet</span>
-            <motion.div
-              className="absolute inset-0 bg-red-800"
-              initial={{ scale: 0, opacity: 0 }}
-              whileHover={{ scale: 1, opacity: 1 }}
-              transition={{ duration: 0.3 }}
-            />
           </Button>
         </a>
       </motion.div>
+      </div>
+
+      
+
+      {/* Button */}
+      
     </div>
   );
 }
