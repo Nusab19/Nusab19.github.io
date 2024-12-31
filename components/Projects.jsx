@@ -12,7 +12,7 @@ const projects = [
     link: "https://contest-hive.vercel.app/",
     github: "https://github.com/Contest-Hive/Contest-Hive/",
     isImage: true,
-    imageSrc: "/images/projects/contest hive.svg",
+    imageSrc: "/images/projects/contest-hive.svg",
   },
   {
     title: "Shohid24 - শহীদ২৪",
@@ -32,7 +32,7 @@ const projects = [
     link: "https://t.me/AlFurqanRobot",
     github: "https://github.com/The-Quran-Project/TG-Quran-Bot",
     isImage: true,
-    imageSrc: "/images/projects/quran bot.jpg",
+    imageSrc: "/images/projects/quran-bot.jpg",
   },
   {
     title: "Quran API",
@@ -42,7 +42,7 @@ const projects = [
     link: "https://quranapi.pages.dev/",
     github: "https://github.com/The-Quran-Project/Quran-API",
     isImage: true,
-    imageSrc: "/images/projects/quran api.svg",
+    imageSrc: "/images/projects/quran-api.svg",
   },
   {
     title: "Toph Leaderboard",
