@@ -1,9 +1,70 @@
 import Link from "next/link";
 import Image from "next/image";
-
 import Balancer from "react-wrap-balancer";
-
 import icons from "@helpers/icons";
+
+const projects = [
+  {
+    title: "Contest Hive",
+    description:
+      "A website showing the future contests from 7 different platforms",
+    technologies: ["react", "nextjs", "python"],
+    link: "https://contest-hive.vercel.app/",
+    github: "https://github.com/Contest-Hive/Contest-Hive/",
+    isImage: true,
+    imageSrc: "/images/projects/contest hive.svg",
+  },
+  {
+    title: "Shohid24 - শহীদ২৪",
+    description:
+      "A website showing the list of martyrs in the July Student Movement that happened in Bangladesh",
+    technologies: ["react", "nextjs"],
+    link: "https://shohid24.pages.dev/",
+    github: "https://github.com/Shohid24/shohid24",
+    isImage: true,
+    imageSrc: "/images/projects/shohid24.svg",
+  },
+  {
+    title: "Al Quran Bot",
+    description:
+      "A telegram bot with Arabic, English and Audio recitation of each verse of the Holy Quran",
+    technologies: ["python", "mongodb"],
+    link: "https://t.me/AlFurqanRobot",
+    github: "https://github.com/The-Quran-Project/TG-Quran-Bot",
+    isImage: true,
+    imageSrc: "/images/projects/quran bot.jpg",
+  },
+  {
+    title: "Quran API",
+    description:
+      "API for the Quran with no rate limit. No authentication required",
+    technologies: ["react", "nextjs", "python"],
+    link: "https://quranapi.pages.dev/",
+    github: "https://github.com/The-Quran-Project/Quran-API",
+    isImage: true,
+    imageSrc: "/images/projects/quran api.svg",
+  },
+  {
+    title: "Toph Leaderboard",
+    description:
+      "A website showcasing the users with the most Fastest, Lightest & Shortest code submissions in toph.co",
+    technologies: ["react", "nextjs", "python"],
+    link: "https://toph.pages.dev/",
+    github: "https://github.com/Nusab19/Toph-Leaderborad",
+    isImage: true,
+    imageSrc: "/images/projects/toph.svg",
+  },
+  {
+    title: "pyNekobin",
+    description:
+      "Python Wrapper for Nekobin API to paste and read text snippets from nekobin.com",
+    technologies: ["python"],
+    link: "https://nekobin.com/",
+    github: "https://github.com/Nusab19/pyNekobin",
+    isImage: true,
+    imageSrc: "/images/projects/nekobin.jpg",
+  },
+];
 
 const Projects = () => {
   return (
@@ -14,49 +75,7 @@ const Projects = () => {
         </header>
 
         <div className="grid grid-cols-1 gap-5 px-2 lg:grid-cols-2 lg:px-0">
-          {getProjectCard({
-            title: "Contest Hive",
-            description:
-              "A website showing the future contests from 7 different platforms",
-            technologies: ["react", "nextjs", "python"],
-            link: "https://contest-hive.vercel.app/",
-            github: "https://github.com/Contest-Hive/Contest-Hive/",
-            isImage: true,
-            imageSrc: "/images/contesthive.svg",
-          })}
-
-          {getProjectCard({
-            title: "Toph Leaderboard",
-            description:
-              "A website showcasing the users with the most Fastest, Lightest & Shortest code submissions in toph.co",
-            technologies: ["react", "nextjs", "python"],
-            link: "https://toph.pages.dev/",
-            github: "https://github.com/Nusab19/Toph-Leaderborad",
-            isImage: true,
-            imageSrc: "/images/toph.svg",
-          })}
-
-          {getProjectCard({
-            title: "Al Quran Bot",
-            description:
-              "A telegram bot with Arabic, English and Audio recitation of each verse of the Holy Quran",
-            technologies: ["python", "mongodb"],
-            isImage: true,
-            imageSrc: "/images/quranBot.jpg",
-            link: "https://t.me/AlFurqanRobot",
-            github: "https://github.com/The-Quran-Project/TG-Quran-Bot",
-          })}
-
-          {getProjectCard({
-            title: "pyNekobin",
-            description:
-              "Python Wrapper for Nekobin API to paste and read text snippets from nekobin.com",
-            technologies: ["python"],
-            isImage: true,
-            imageSrc: "/images/nekobin.jpg",
-            link: "https://nekobin.com/",
-            github: "https://github.com/Nusab19/pyNekobin",
-          })}
+          {projects.map((project, index) => getProjectCard(project))}
         </div>
       </div>
     </div>

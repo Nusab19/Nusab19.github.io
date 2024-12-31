@@ -41,7 +41,7 @@ const Footer = () => {
               Nusab Taha
             </span>
             <span className="text-sm font-semibold text-gray-300 md:text-base">
-              Full-Stack Software Engineer
+              Full-Stack Developer
             </span>
           </div>
           <div className="grid grid-cols-2 gap-8 sm:gap-6">
