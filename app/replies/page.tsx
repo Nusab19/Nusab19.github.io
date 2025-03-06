@@ -1,13 +1,7 @@
-import { getQuestions } from "@server/getQnA";
 import AnonymousReplies from "./componenets/AnonymousReplies";
+import questions from "../../public/questions.json";
 
-export const runtime = 'edge';
-export const dynamic = "force-dynamic";
-export const revalidate = 60 * 5; // 5 minutes
-
-export default async function ExamplePage() {
-  const questions = await getQuestions();
-
+export default function Replies() {
   return (
     <div className="min-h-screen bg-zinc-950 px-4 py-12">
       <AnonymousReplies

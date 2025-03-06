@@ -1,5 +1,4 @@
 "use client";
-
 import { useState, useEffect } from "react";
 import { formatDistanceToNow, parseISO } from "date-fns";
 import { MessageCircle, Search } from "lucide-react";
