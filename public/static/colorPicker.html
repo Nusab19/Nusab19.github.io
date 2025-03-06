@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Color Bot Picker</title>
+    <style>
+        body {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
+        }
+        #colorPicker {
+            width: 200px;
+            height: 200px;
+            margin: 20px;
+            border: none;
+            cursor: pointer;
+        }
+        #colorValue {
+            font-size: 24px;
+            padding: 10px;
+            background-color: white;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+        button {
+            padding: 10px 20px;
+            font-size: 16px;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #45a049;
+        }
+    </style>
+</head>
+<body>
+    <h1>Color Bot Picker</h1>
+    <input type="color" id="colorPicker" value="#ff0000">
+    <div id="colorValue">#FF0000</div>
+    <button onclick="sendToTelegram()">Send to Color Bot</button>
+
+    <script>
+        const picker = document.getElementById('colorPicker');
+        const valueDisplay = document.getElementById('colorValue');
+
+        picker.addEventListener('input', function(e) {
+            valueDisplay.textContent = e.target.value.toUpperCase();
+        });
+
+        function sendToTelegram() {
+            const color = picker.value;
+            // Replace with your bot's username and chat ID handling
+            const telegramUrl = `https://t.me/ColoorBot?start=color_${color.replace('#', '')}`;
+            window.open(telegramUrl, '_blank');
+        }
+    </script>
+</body>
+</html>
