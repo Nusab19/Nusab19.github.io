@@ -12,6 +12,21 @@
     </div>
 
     <script type="text/javascript">
+        // Check Web App initialization
+        Telegram.WebApp.ready();
+        Telegram.WebApp.expand();
+
+        // Display initial state
+        const initData = Telegram.WebApp.initDataUnsafe;
+        const alerts = [
+            `Web App Version: ${Telegram.WebApp.version}`,
+            `Is Expanded: ${Telegram.WebApp.isExpanded}`,
+            `Chat ID: ${initData.chat?.id || 'Not available'}`,
+            `User ID: ${initData.user?.id || 'Not available'}`,
+            `Init Data: ${JSON.stringify(initData)}`
+        ];
+        alerts.forEach(msg => Telegram.WebApp.showAlert(msg));
+
         const colorPicker = new iro.ColorPicker('#picker', {
             borderColor: "#ffffff",
             borderWidth: 1,
@@ -22,9 +37,6 @@
             document.body.style.background = color.hexString;
         });
 
-        Telegram.WebApp.ready();
-        Telegram.WebApp.expand();
-
         Telegram.WebApp.MainButton
             .setText('Choose Color')
             .show()
@@ -34,22 +46,18 @@
                     rgb: colorPicker.color.rgb
                 };
                 const jsonData = JSON.stringify(data);
+                Telegram.WebApp.showAlert(`Prepared data: ${jsonData}`);
                 try {
-                    Telegram.WebApp.showAlert(`Attempting to send: ${jsonData}`);
                     Telegram.WebApp.sendData(jsonData);
-                    Telegram.WebApp.showAlert('Color sent! Waiting for bot response...');
+                    Telegram.WebApp.showAlert('sendData executed successfully');
                 } catch (error) {
-                    Telegram.WebApp.showAlert('Error sending data: ' + error.message);
+                    Telegram.WebApp.showAlert(`sendData error: ${error.message}`);
                 }
             });
 
-        // Listen for any events that might indicate success or failure
         Telegram.WebApp.onEvent('webAppDataSent', function() {
-            Telegram.WebApp.showAlert('Telegram confirmed data was sent!');
-        });
-
-        Telegram.WebApp.onEvent('webAppClosed', function() {
-            Telegram.WebApp.showAlert('Web app is closing.');
+            Telegram.WebApp.showAlert('Telegram confirmed data sent!');
         });
     </script>
+</body>
 </html>
