@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Color Bot Picker</title>
+    <script src="https://telegram.org/js/telegram-web-app.js"></script>
     <style>
         body {
             display: flex;
@@ -47,22 +48,33 @@
     <h1>Color Bot Picker</h1>
     <input type="color" id="colorPicker" value="#ff0000">
     <div id="colorValue">#FF0000</div>
-    <button onclick="sendToTelegram()">Send to Color Bot</button>
+    <button id="sendButton">Send to Color Bot</button>
 
     <script>
         const picker = document.getElementById('colorPicker');
         const valueDisplay = document.getElementById('colorValue');
+        const sendButton = document.getElementById('sendButton');
+
+        // Initialize Telegram Web App
+        Telegram.WebApp.ready();
+        Telegram.WebApp.expand();
 
         picker.addEventListener('input', function(e) {
             valueDisplay.textContent = e.target.value.toUpperCase();
         });
 
-        function sendToTelegram() {
+        sendButton.addEventListener('click', function() {
             const color = picker.value;
-            // Replace with your bot's username and chat ID handling
-            const telegramUrl = `https://t.me/ColoorBot?start=color_${color.replace('#', '')}`;
-            window.open(telegramUrl, '_blank');
-        }
+            // Send data back to Telegram
+            Telegram.WebApp.sendData(JSON.stringify({
+                color: color
+            }));
+            Telegram.WebApp.close();
+        });
+
+        // Adjust theme based on Telegram's settings
+        const theme = Telegram.WebApp.colorScheme;
+        document.body.style.backgroundColor = theme === 'dark' ? '#1a1a1a' : '#f0f0f0';
     </script>
 </body>
 </html>
