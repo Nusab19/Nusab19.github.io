@@ -33,19 +33,23 @@
                     hex: colorPicker.color.hexString,
                     rgb: colorPicker.color.rgb
                 };
+                const jsonData = JSON.stringify(data);
                 try {
-                    Telegram.WebApp.sendData(JSON.stringify(data));
-                    // Show feedback to user
+                    Telegram.WebApp.showAlert(`Attempting to send: ${jsonData}`);
+                    Telegram.WebApp.sendData(jsonData);
                     Telegram.WebApp.showAlert('Color sent! Waiting for bot response...');
                 } catch (error) {
-                    Telegram.WebApp.showAlert('Error sending color: ' + error.message);
+                    Telegram.WebApp.showAlert('Error sending data: ' + error.message);
                 }
             });
 
-        // Optional: Listen for confirmation (though this isn't well-documented)
+        // Listen for any events that might indicate success or failure
         Telegram.WebApp.onEvent('webAppDataSent', function() {
-            Telegram.WebApp.showAlert('Data successfully sent to bot!');
-            // Telegram.WebApp.close();
+            Telegram.WebApp.showAlert('Telegram confirmed data was sent!');
+        });
+
+        Telegram.WebApp.onEvent('webAppClosed', function() {
+            Telegram.WebApp.showAlert('Web app is closing.');
         });
     </script>
 </html>
