@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Test Web App</title>
+    <script src="https://telegram.org/js/telegram-web-app.js"></script>
+</head>
+<body>
+    <button id="sendButton">Send Test Data</button>
+    <script>
+        Telegram.WebApp.ready();
+        Telegram.WebApp.expand();
+
+        document.getElementById('sendButton').onclick = function() {
+            const testData = JSON.stringify({ test: "hello" });
+            Telegram.WebApp.showAlert(`Sending: ${testData}`);
+            Telegram.WebApp.sendData(testData);
+            Telegram.WebApp.showAlert('Data sent!');
+        };
+
+        Telegram.WebApp.onEvent('webAppDataSent', function() {
+            Telegram.WebApp.showAlert('Telegram confirmed send!');
+        });
+    </script>
+</body>
+</html>
