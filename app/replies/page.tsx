@@ -1,6 +1,8 @@
 import { getQuestions } from "@server/getQnA";
 import AnonymousReplies from "./componenets/AnonymousReplies";
 
+export const dynamic = "force-dynamic";
+
 export const revalidate = 60 * 5; // 5 minutes
 
 export default async function ExamplePage() {

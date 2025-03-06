@@ -6,31 +6,23 @@ if (!MONGO_URI) {
   throw new Error("MONGO_URI is not defined");
 }
 
+// Maintain a global cache to avoid reconnecting in a hot-reload scenario
+declare global {
+  var mongooseConnection: Promise<typeof mongoose> | undefined;
+}
+
 const connectDB = async () => {
-  try {
-    // Check if mongoose is initialized at all
-    if (!mongoose?.connections?.[0]) {
-      console.log("MongoDB: Initializing new connection");
-      await mongoose.connect(MONGO_URI, { dbName: "prod" });
-      return;
-    }
-
-    // Get the default connection
-    const defaultConn = mongoose.connections[0];
-
-    // If we can safely check readyState and we're connected, return early
-    if (defaultConn.readyState === 1) {
-      // console.log("Already connected to MongoDB");
-      return;
-    }
-
-    // If we reach here, we need a new connection
-    await mongoose.connect(MONGO_URI, { dbName: "prod" });
-    console.log("Connected to MongoDB: prod");
-  } catch (error) {
-    console.error("MongoDB connection error:", error);
-    throw error; // Re-throw to handle it in the calling code
+  if (mongoose.connection.readyState === 1) {
+    // Already connected
+    return;
   }
+
+  if (!global.mongooseConnection) {
+    global.mongooseConnection = mongoose.connect(MONGO_URI, { dbName: "prod" });
+    console.log("Connected to MongoDB: prod");
+  }
+
+  await global.mongooseConnection;
 };
 
 export default connectDB;

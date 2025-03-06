@@ -1,8 +1,8 @@
 "use server";
 
-import connectDB from "@db/connect";
 import mongoose from "mongoose";
 import AnonymousQuestion from "@/db/schema"; // Import your model
+import connectDB from "@db/connect";
 
 // Define the interface to match the schema
 interface IAnonymousQuestion {
