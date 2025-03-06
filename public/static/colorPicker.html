@@ -12,33 +12,40 @@
     </div>
 
     <script type="text/javascript">
-        // Initialize iro.js color picker
         const colorPicker = new iro.ColorPicker('#picker', {
             borderColor: "#ffffff",
             borderWidth: 1,
             width: Math.round(document.documentElement.clientWidth / 2),
         });
 
-        // Update background on color change
         colorPicker.on('color:change', function (color) {
             document.body.style.background = color.hexString;
         });
 
-        // Telegram Web App setup
         Telegram.WebApp.ready();
         Telegram.WebApp.expand();
-        
+
         Telegram.WebApp.MainButton
             .setText('Choose Color')
             .show()
             .onClick(function () {
-                const data = JSON.stringify({
+                const data = {
                     hex: colorPicker.color.hexString,
                     rgb: colorPicker.color.rgb
-                });
-                Telegram.WebApp.sendData(data);
-                Telegram.WebApp.close();
+                };
+                try {
+                    Telegram.WebApp.sendData(JSON.stringify(data));
+                    // Show feedback to user
+                    Telegram.WebApp.showAlert('Color sent! Waiting for bot response...');
+                } catch (error) {
+                    Telegram.WebApp.showAlert('Error sending color: ' + error.message);
+                }
             });
+
+        // Optional: Listen for confirmation (though this isn't well-documented)
+        Telegram.WebApp.onEvent('webAppDataSent', function() {
+            Telegram.WebApp.showAlert('Data successfully sent to bot!');
+            // Telegram.WebApp.close();
+        });
     </script>
-</body>
 </html>
