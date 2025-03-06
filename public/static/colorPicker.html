@@ -8,23 +8,23 @@
 <body style="background-color: #ffffff">
     <div id="status">Loading...</div>
     <script type="text/javascript">
-        try {
-            Telegram.WebApp.showAlert(`Web App Version: ${Telegram.WebApp.version}`);
-            
-            Telegram.WebApp.ready();
-            Telegram.WebApp.showAlert('Ready executed');
-
-            Telegram.WebApp.expand();
-            Telegram.WebApp.showAlert('Expand executed');
-
-            Telegram.WebApp.showAlert(`Chat ID: ${Telegram.WebApp.initDataUnsafe.chat?.id || 'Not available'}`);
-            Telegram.WebApp.showAlert(`User ID: ${Telegram.WebApp.initDataUnsafe.user?.id || 'Not available'}`);
-            Telegram.WebApp.showAlert(`Init Data: ${JSON.stringify(Telegram.WebApp.initDataUnsafe)}`);
-
-            document.getElementById('status').textContent = 'Web App Loaded';
-        } catch (error) {
-            Telegram.WebApp.showAlert(`Error: ${error.message}`);
-        }
+        setTimeout(function() {
+            try {
+                Telegram.WebApp.showAlert(`Web App Version: ${Telegram.WebApp.version}`);
+                Telegram.WebApp.showAlert('Attempting to call ready()');
+                Telegram.WebApp.ready();
+                Telegram.WebApp.showAlert('Ready executed');
+                Telegram.WebApp.showAlert('Attempting to call expand()');
+                Telegram.WebApp.expand();
+                Telegram.WebApp.showAlert('Expand executed');
+                Telegram.WebApp.showAlert(`Chat ID: ${Telegram.WebApp.initDataUnsafe.chat?.id || 'Not available'}`);
+                Telegram.WebApp.showAlert(`User ID: ${Telegram.WebApp.initDataUnsafe.user?.id || 'Not available'}`);
+                Telegram.WebApp.showAlert(`Init Data: ${JSON.stringify(Telegram.WebApp.initDataUnsafe)}`);
+                document.getElementById('status').textContent = 'Web App Loaded';
+            } catch (error) {
+                Telegram.WebApp.showAlert(`Error: ${error.message}`);
+            }
+        }, 1000); // Wait 1 second to ensure Telegram is ready
     </script>
 </body>
 </html>
