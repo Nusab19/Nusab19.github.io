@@ -10,7 +10,7 @@ const About = () => {
         </header>
         <div className="flex flex-col-reverse items-center justify-center md:flex-row lg:justify-between">
           <span className="px-4 py-10 leading-relaxed tracking-wide md:w-2/3 md:text-xl md:leading-relaxed">
-            I&apos;m an 12th-grade student based in Bangladesh, specializing in <b>TypeScript</b>, <b>React</b>, <b>Next.js</b>, and <b><i>Python</i></b>.
+            I&apos;m a student based in Bangladesh, specializing in <b>TypeScript</b>, <b>React</b>, <b>Next.js</b>, and <b><i>Python</i></b>.
             <br />
             <span className="mt-5 block text-sm md:text-base">
               <Balancer>
