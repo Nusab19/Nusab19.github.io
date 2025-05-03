@@ -33,8 +33,14 @@ const Navbar = () => {
         {icons.logo}
       </Link>
       <span className="circle2 h-4 w-4 rounded-full bg-[#00bbd4] md:h-5 md:w-5"></span>
-
-      {/* <button className="absolute right-7">{icons.burgerMenu}</button> */}
+      <Link
+        href="https://blog19.pages.dev"
+        target="_blank"
+        title="My blog page"
+        className="ml-auto mr-5 block rounded-md bg-blue-200 px-2 pb-1.5 pt-1 font-semibold underline-offset-4 transition-all duration-150 hover:bg-blue-300 hover:underline"
+      >
+        Blog
+      </Link>
     </nav>
   );
 };
