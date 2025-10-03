@@ -25,6 +25,16 @@ const projects = [
     imageSrc: "/images/projects/shohid24.svg",
   },
   {
+    title: "Quran API",
+    description:
+      "API for the Quran with no rate limit. No authentication required",
+      technologies: ["react", "nextjs", "python"],
+    link: "https://quranapi.pages.dev/",
+    github: "https://github.com/The-Quran-Project/Quran-API",
+    isImage: true,
+    imageSrc: "/images/projects/quran-api.svg",
+  },
+  {
     title: "Al Quran Bot",
     description:
       "A telegram bot with Arabic, English and Audio recitation of each verse of the Holy Quran",
@@ -35,19 +45,9 @@ const projects = [
     imageSrc: "/images/projects/quran-bot.jpg",
   },
   {
-    title: "Quran API",
-    description:
-      "API for the Quran with no rate limit. No authentication required",
-    technologies: ["react", "nextjs", "python"],
-    link: "https://quranapi.pages.dev/",
-    github: "https://github.com/The-Quran-Project/Quran-API",
-    isImage: true,
-    imageSrc: "/images/projects/quran-api.svg",
-  },
-  {
     title: "Toph Leaderboard",
     description:
-      "A website showcasing the users with the most Fastest, Lightest & Shortest code submissions in toph.co",
+    "A website showcasing the users with the most Fastest, Lightest & Shortest code submissions in toph.co",
     technologies: ["react", "nextjs", "python"],
     link: "https://toph.pages.dev/",
     github: "https://github.com/Nusab19/Toph-Leaderborad",

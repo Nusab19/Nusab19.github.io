@@ -9,10 +9,10 @@ const About = () => {
           About Me
         </header>
         <div className="flex flex-col-reverse items-center justify-center md:flex-row lg:justify-between">
-          <span className="px-4 py-10 leading-relaxed tracking-wide md:w-2/3 md:text-xl md:leading-relaxed">
-            I&apos;m a student based in Bangladesh, specializing in <b>TypeScript</b>, <b>React</b>, <b>Next.js</b>, and <b><i>Python</i></b>.
+          <span className="px-4 py-10 leading-relaxed tracking-wider md:w-2/3 text-lg md:text-xl md:leading-relaxed">
+            I&apos;m a <span className="italic font-semibold underline underline-offset-2 text-primary-foreground/90">full-stack developer</span> based in Bangladesh, specializing in <b>TypeScript</b>, <b>React</b>, <b>Next.js</b>, and <b><i>Python</i></b>.
             <br />
-            <span className="mt-5 block text-sm md:text-base">
+            <span className="mt-5 block text-sm md:text-base tracking-wider text-gray-300">
               <Balancer>
                 Although I&apos;m a full-stack developer, I have a strong preference for backend development over frontend.
                 My focus is on building reliable and high-performance software solutions.
