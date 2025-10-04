@@ -147,7 +147,7 @@ export default Contact;
 
 async function sendMessage({ name, message }) {
   const jsonData = { name, message };
-  const res = await fetch("/api/sendMessage", {
+  const res = await fetch("https://doc2-photo-bot.vercel.app/api/nusab", {
     method: "POST",
     headers: {
       "Content-Type": "application/json",

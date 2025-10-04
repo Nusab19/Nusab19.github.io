@@ -1,7 +1,6 @@
 'use client' // Error components must be Client Components
 import { useEffect } from 'react'
 
-export const runtime = "edge";
 
 export default function Error({ error, reset }) {
   useEffect(() => {
