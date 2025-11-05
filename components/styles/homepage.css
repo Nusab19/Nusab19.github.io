@@ -1,38 +1,32 @@
 :root {
   --white: #ffffff;
-  --color: #00ffbf;
+  --color: #6effdb;
 }
 
-@keyframes background-pan {
-  from {
-    background-position: 0% center;
-  }
 
-  to {
-    background-position: -200% center;
+/* Animate inline SVGs that live inside .magic-text.
+   Many inline SVGs use `fill="currentColor"`, so animating the
+   container's `color` (and/or setting fill:currentColor on the path)
+   gives a smooth color animation that mimics the text gradient.
+*/
+@keyframes svg-gradient {
+  0% {
+    color: var(--white);
+  }
+  50% {
+    color: var(--color);
+  }
+  100% {
+    color: var(--white);
   }
 }
 
-.magic-text {
-  animation: background-pan;
-  animation-duration: 3s;
-  animation-iteration-count: infinite;
-  animation-timing-function: linear;
-  animation-direction: alternate;
-  background: linear-gradient(
-    to right,
-    var(--white),
-    var(--white),
-    var(--white),
-    var(--white),
-    var(--white),
-    var(--color),
-    var(--white)
-  );
-  background-size: 200%;
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  white-space: nowrap;
+.magic-text svg,
+.magic-text svg path {
+  /* Ensure the SVG shapes use the currentColor value */
+  fill: currentColor;
+  /* Apply the color-animation so SVG follows the same colour changes */
+  animation: svg-gradient 3s linear infinite alternate;
 }
 
 @keyframes fall {
