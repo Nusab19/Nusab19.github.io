@@ -38,8 +38,23 @@ const Contact = () => {
     <div className="bg-[#0c0c14] text-gray-100">
       <Toaster closeButton richColors visibleToasts={2} />
       <div className="mx-auto max-w-screen-lg px-0 pb-40 pt-10">
-        <header className="py-10 text-center text-3xl font-bold md:mb-20 md:text-5xl">
-          Contact Me
+        <header className="pt-10 text-center text-3xl font-bold md:mb-20 md:text-5xl">
+          Send Me a Message
+          <p className="mx-auto max-w-md pt-5 text-center text-sm font-medium tracking-wider text-gray-400">
+            Send me a short message about anything. But in general, send me a
+            mail at{" "}
+            <code
+              className="cursor-pointer font-mono font-light text-blue-300/80 hover:text-blue-300/90"
+              onClick={() => {
+                navigator.clipboard.writeText("nusab19@duck.com");
+                toast.success("Email copied to clipboard!");
+              }}
+            >
+              nusab19@duck.com
+            </code>
+            <br/>
+            <span className="font-light">Don&apos;t forget to give your contact if you want me to reply!</span>
+          </p>
         </header>
 
         <div className="flex flex-col items-center justify-center">
