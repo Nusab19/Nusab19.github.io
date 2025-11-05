@@ -28,7 +28,7 @@ const projects = [
     title: "Quran API",
     description:
       "API for the Quran with no rate limit. No authentication required",
-      technologies: ["react", "nextjs", "python"],
+    technologies: ["react", "nextjs", "python"],
     link: "https://quranapi.pages.dev/",
     github: "https://github.com/The-Quran-Project/Quran-API",
     isImage: true,
@@ -47,7 +47,7 @@ const projects = [
   {
     title: "Toph Leaderboard",
     description:
-    "A website showcasing the users with the most Fastest, Lightest & Shortest code submissions in toph.co",
+      "A website showcasing the users with the most Fastest, Lightest & Shortest code submissions in toph.co",
     technologies: ["react", "nextjs", "python"],
     link: "https://toph.pages.dev/",
     github: "https://github.com/Nusab19/Toph-Leaderborad",
@@ -152,14 +152,14 @@ function getProjectCard({
           <Link
             href={link ?? "#"}
             target="_blank"
-            className="transition-color rounded-md bg-[#eaeaea] px-2 py-1 text-sm  text-[#172327] duration-200 hover:bg-[#172327] hover:text-[#ffffff]"
+            className="transition-color rounded-md bg-[#eaeaea] px-2 py-1 text-sm  text-gray-800 duration-100 hover:bg-gray-700/50 hover:text-[#eaeaea]"
           >
             Website
           </Link>
           <Link
             href={github ?? "#"}
             target="_blank"
-            className="hover:bg- transition-color rounded-md bg-[#172327] px-2 py-1 text-sm text-[#ffffff] duration-200 hover:bg-[#eaeaea] hover:text-[#172327]"
+            className="hover:bg- transition-color rounded-md bg-gray-700/50 px-2 py-1 text-sm text-[#eaeaea] duration-100 hover:bg-gray-700/30"
           >
             GitHub
           </Link>

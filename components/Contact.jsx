@@ -38,7 +38,7 @@ const Contact = () => {
     <div className="bg-[#0c0c14] text-gray-100">
       <Toaster closeButton richColors visibleToasts={2} />
       <div className="mx-auto max-w-screen-lg px-0 pb-40 pt-10">
-        <header className="pt-10 text-center text-3xl font-bold md:mb-20 md:text-5xl">
+        <header className="py-10 md:pb-5 text-center text-3xl font-bold md:mb-20 md:text-5xl">
           Send Me a Message
           <p className="mx-auto max-w-md pt-5 text-center text-sm font-medium tracking-wider text-gray-400">
             Send me a short message about anything. But in general, send me a
