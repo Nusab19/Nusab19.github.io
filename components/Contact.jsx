@@ -53,7 +53,7 @@ const Contact = () => {
               nusab19@duck.com
             </code>
             <br />
-            <span className="font-light">
+            <span className="font-light mx-auto max-w-md md:text-sm text-xs">
               Don&apos;t forget to give your contact if you want me to reply!
             </span>
           </p>
