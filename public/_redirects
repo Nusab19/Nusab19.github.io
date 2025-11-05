@@ -1,4 +1,5 @@
 /meow /pi 301
 /hello /pi 200
 /api /pi 200
-/blog/* https://blog19.pages.dev/:splat 301
+/blog https://blog19.pages.dev/ 301
+/blog/* https://blog19.pages.dev/ 301
