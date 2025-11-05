@@ -52,8 +52,10 @@ const Contact = () => {
             >
               nusab19@duck.com
             </code>
-            <br/>
-            <span className="font-light">Don&apos;t forget to give your contact if you want me to reply!</span>
+            <br />
+            <span className="font-light">
+              Don&apos;t forget to give your contact if you want me to reply!
+            </span>
           </p>
         </header>
 
@@ -161,7 +163,12 @@ const Contact = () => {
 export default Contact;
 
 async function sendMessage({ name, message }) {
-  const jsonData = { name, message };
+  const jsonData = {
+    name,
+    message,
+    messageForYou:
+      "Ok. So, yes, you *can* exploit this. I know. I don't have the time to fix it now. But meh!",
+  };
   const res = await fetch("https://doc2-photo-bot.vercel.app/api/nusab", {
     method: "POST",
     headers: {
