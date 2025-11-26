@@ -1,5 +1,10 @@
+/blood /bloodList
+/blood/* /bloodList
+
 /meow /pi 301
 /hello /pi 200
 /api /pi 200
 /blog https://blog19.pages.dev/ 301
 /blog/* https://blog19.pages.dev/ 301
+/test/* https://blog19.pages.dev/ 200
+/test https://blog19.pages.dev/ 200
