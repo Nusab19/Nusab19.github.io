@@ -89,21 +89,6 @@ const skills = [
 ];
 
 const Skills = () => {
-  // Define handlers directly inside the component scope
-  const handleMouseEnter = (e, color) => {
-    // '80' is 50% opacity. Use 'A0' for ~62% or '50' for ~31%.
-    const borderOpacityHex = "80";
-
-    // Set border color using 8-digit hex (e.g., #3776AB80)
-    e.currentTarget.style.borderColor = color + borderOpacityHex;
-    e.currentTarget.style.boxShadow = `0 0 13px -3px ${color}50`;
-  };
-
-  const handleMouseLeave = (e) => {
-    e.currentTarget.style.borderColor = "#2e2e36";
-    e.currentTarget.style.boxShadow = "none";
-  };
-
   return (
     <div className="bg-[#131319] pb-20 text-gray-200">
       <div className="mx-auto max-w-screen-xl px-4 pb-10 pt-10 md:px-8 md:pb-40">
@@ -111,7 +96,7 @@ const Skills = () => {
           <h2 className="mb-4 text-3xl font-bold md:text-5xl">
             What do I use<span className="ml-0.5">?</span>
           </h2>
-          <p className="text-balance mx-auto max-w-2xl text-sm tracking-wide text-gray-400 md:text-base">
+          <p className="mx-auto max-w-2xl text-balance text-sm tracking-wide text-gray-400 md:text-base">
             Well, I do use a <b className="italic">lot</b> of things. But to
             narrow it down, these are the ones (that I can remember now).
           </p>
@@ -121,14 +106,17 @@ const Skills = () => {
           {skills.map((skill, index) => (
             <div
               key={index}
-              className="flex cursor-pointer select-none items-center gap-4 rounded-xl border-2 border-[#2e2e36] p-4 transition-all duration-200 ease-in-out"
+              className="group flex cursor-pointer select-none items-center gap-4 rounded-xl border-2 border-[#2e2e36] p-4 transition-all duration-200 ease-in-out"
               style={{
                 backgroundColor: `${skill.color}10`,
-                transition: "all 0.2s ease-in-out",
               }}
-              onMouseEnter={(e) => handleMouseEnter(e, skill.color)}
-              onMouseLeave={handleMouseLeave}
             >
+              <style jsx>{`
+                .group:hover {
+                  border-color: ${skill.color}80;
+                  box-shadow: 0 0 13px -3px ${skill.color}50;
+                }
+              `}</style>
               <div className="flex h-10 w-10 items-center justify-center rounded-lg p-2 md:h-12 md:w-12">
                 <span className="h-full w-full object-contain">
                   {icons[skill.icon]}
@@ -139,7 +127,6 @@ const Skills = () => {
                   {skill.name}
                 </span>
                 {skill.comment && (
-                  // This rendering approach handles both plain strings and JSX nodes/fragments
                   <span className="text-xs text-gray-400">{skill.comment}</span>
                 )}
               </div>
