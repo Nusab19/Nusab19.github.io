@@ -27,7 +27,13 @@ const skills = [
     color: "#38B2AC",
     comment: (
       <span className="tracking-wider">
-        Useful<span className="text-3xl leading-[0px] text-blue-600/70">.</span>
+        Useful
+        <span
+          className="text-3xl leading-[0px] text-blue-600/70"
+          title="The tiny dot!"
+        >
+          .
+        </span>
       </span>
     ),
   },
