@@ -70,8 +70,12 @@ const Projects = () => {
   return (
     <div className="bg-[#0b0b10] text-gray-100 md:pb-20">
       <div className="mx-auto max-w-screen-lg px-0 pb-40 pt-10">
-        <header className="py-10 text-center text-3xl font-bold md:mb-20 md:text-5xl">
-          Projects
+        <header className="mb-10 pt-10 text-center md:mb-16">
+          <h2 className="mb-4 text-3xl font-bold md:text-5xl">Projects</h2>
+          <p className="text-balance mx-auto max-w-2xl text-sm tracking-wide text-gray-400 md:text-base">
+            Some of the things that I <b className="italic">think</b> I can
+            showcase.
+          </p>
         </header>
 
         <div className="grid grid-cols-1 gap-5 px-2 lg:grid-cols-2 lg:px-0">
@@ -123,7 +127,7 @@ function getProjectCard({
   const img = isImage ?? "svg";
 
   return (
-    <div className="flex items-center gap-7 rounded-lg bg-[#0d1117] p-5">
+    <div className="flex items-center gap-7 rounded-lg bg-[#131721] p-5">
       <div className="flex min-w-[60px] flex-col items-center justify-center gap-3 md:min-w-[100px]">
         {img === "svg" ? (
           <span className="h-[60px] w-[60px] md:h-[80px] md:w-[80px]">

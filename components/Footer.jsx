@@ -60,7 +60,7 @@ const Footer = () => {
               </div>
             </div>
 
-            <div className="md:ml-5">
+            <div className="select-none opacity-50 md:ml-5">
               <h2 className="mb-6 text-sm font-semibold uppercase  text-gray-200">
                 Others
               </h2>
@@ -69,6 +69,7 @@ const Footer = () => {
                   <a
                     // href="/assets/files/cv.pdf"
                     href="#"
+                    title="Yet to be done"
                     target="_blank"
                     className="hover:underline"
                   >
@@ -76,7 +77,11 @@ const Footer = () => {
                   </a>
                 </li>
                 <li>
-                  <a href="#" className="hover:underline">
+                  <a
+                    href="#"
+                    className="hover:underline"
+                    title="Yet to be done"
+                  >
                     Resume
                   </a>
                 </li>

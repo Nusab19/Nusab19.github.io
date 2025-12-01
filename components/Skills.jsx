@@ -1,38 +1,144 @@
-import { ABeeZee } from "next/font/google";
+"use client";
 
 import icons from "@helpers/icons";
 
-const aBeeZee = ABeeZee({ subsets: ["latin"], weight: ["400"] });
-
-function getSkillItem(text, iconName) {
-  return (
-    <div className="flex cursor-pointer select-none flex-col items-center justify-center gap-3 rounded-md bg-[#1e1e25] py-5 md:py-8 transition-transform duration-200 ease-in-out hover:scale-95">
-      <span className="h-[40px] w-[40px] md:h-[60px] md:w-[60px]">{icons[iconName]}</span>
-      {text}
-    </div>
-  );
-}
+const skills = [
+  {
+    name: "Python",
+    icon: "python",
+    color: "#3776AB",
+    comment: "I can't live without it",
+  },
+  {
+    name: "Next.js",
+    icon: "nextjs",
+    color: "#FFFFFF",
+    comment: "Well, it's not *bad*",
+  },
+  {
+    name: "React",
+    icon: "react",
+    color: "#61DAFB",
+    comment: "Ridiculously large bundle size -.-",
+  },
+  {
+    name: "Tailwind CSS",
+    icon: "tailwind",
+    color: "#38B2AC",
+    comment: (
+      <span className="tracking-wider">
+        Useful<span className="text-3xl leading-[0px] text-blue-600/70">.</span>
+      </span>
+    ),
+  },
+  {
+    name: "Node.js",
+    icon: "nodeJS",
+    color: "#339933",
+  },
+  {
+    name: "Typescript",
+    icon: "typescript",
+    color: "#3178C6",
+    comment: (
+      <>
+        Types? <code className="font-bold italic">any</code>
+      </>
+    ),
+  },
+  {
+    name: "Git",
+    icon: "git",
+    color: "#F05032",
+    comment: "Merge conflicts :[",
+  },
+  {
+    name: "FastAPI",
+    icon: "fastAPI",
+    color: "#009688",
+    comment: "In Python, it is the best",
+  },
+  {
+    name: "Figma",
+    icon: "figma",
+    color: "#F24E1E",
+  },
+  {
+    name: "MDX",
+    icon: "mdx",
+    color: "#FCB32C",
+    comment: "Sometimes I write blogs, so :3",
+  },
+  {
+    name: "SQLite",
+    icon: "sqlite",
+    color: "#005780",
+    comment: "Way faster than MongoDB",
+  },
+  {
+    name: "MongoDB",
+    icon: "mongodb",
+    color: "#47A248",
+  },
+];
 
 const Skills = () => {
+  // Define handlers directly inside the component scope
+  const handleMouseEnter = (e, color) => {
+    // '80' is 50% opacity. Use 'A0' for ~62% or '50' for ~31%.
+    const borderOpacityHex = "80";
+
+    // Set border color using 8-digit hex (e.g., #3776AB80)
+    e.currentTarget.style.borderColor = color + borderOpacityHex;
+    e.currentTarget.style.boxShadow = `0 0 13px -3px ${color}50`;
+  };
+
+  const handleMouseLeave = (e) => {
+    e.currentTarget.style.borderColor = "#2e2e36";
+    e.currentTarget.style.boxShadow = "none";
+  };
+
   return (
-    <div className={`${aBeeZee.style} bg-[#131319] pb-20 text-gray-200`}>
-      <div className="mx-auto max-w-screen-lg px-2 md:pb-40 pb-10 pt-10 md:px-0">
-        <header className="mb-10 pt-10 text-center text-3xl font-bold md:mb-20 md:text-5xl">
-          Skills
+    <div className="bg-[#131319] pb-20 text-gray-200">
+      <div className="mx-auto max-w-screen-xl px-4 pb-10 pt-10 md:px-8 md:pb-40">
+        <header className="mb-10 pt-10 text-center md:mb-16">
+          <h2 className="mb-4 text-3xl font-bold md:text-5xl">
+            What do I use<span className="ml-0.5">?</span>
+          </h2>
+          <p className="text-balance mx-auto max-w-2xl text-sm tracking-wide text-gray-400 md:text-base">
+            Well, I do use a <b className="italic">lot</b> of things. But to
+            narrow it down, these are the ones (that I can remember now).
+          </p>
         </header>
-        <div className="grid grid-cols-3 gap-5 text-xs font-semibold text-gray-300 md:grid-cols-3 lg:grid-cols-4">
-          {getSkillItem("Python", "python")}
-          {getSkillItem("Next.js", "nextjs")}
-          {getSkillItem("React", "react")}
-          {getSkillItem("Tailwind CSS", "tailwind")}
-          {getSkillItem("Node.js", "nodeJS")}
-          {getSkillItem("JavaScript", "javascript")}
-          {getSkillItem("Git", "git")}
-          {getSkillItem("FastAPI", "fastAPI")}
-          {getSkillItem("Figma", "figma")}
-          {getSkillItem("MDX", "mdx")}
-          {getSkillItem("C++", "cpp")}
-          {getSkillItem("MongoDB", "mongodb")}
+
+        <div className="grid grid-cols-1 gap-4 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">
+          {skills.map((skill, index) => (
+            <div
+              key={index}
+              className="flex cursor-pointer select-none items-center gap-4 rounded-xl border-2 border-[#2e2e36] p-4 transition-all duration-200 ease-in-out"
+              style={{
+                backgroundColor: `${skill.color}10`,
+                transition: "all 0.2s ease-in-out",
+              }}
+              onMouseEnter={(e) => handleMouseEnter(e, skill.color)}
+              onMouseLeave={handleMouseLeave}
+            >
+              <div className="flex h-10 w-10 items-center justify-center rounded-lg p-2 md:h-12 md:w-12">
+                <span className="h-full w-full object-contain">
+                  {icons[skill.icon]}
+                </span>
+              </div>
+              <div className="flex flex-col tracking-wide">
+                <span className="text-sm font-bold text-gray-200 md:text-base">
+                  {skill.name}
+                </span>
+                {skill.comment && (
+                  // This rendering approach handles both plain strings and JSX nodes/fragments
+                  <span className="text-xs text-gray-400">{skill.comment}</span>
+                )}
+              </div>
+            </div>
+          ))}
         </div>
       </div>
     </div>

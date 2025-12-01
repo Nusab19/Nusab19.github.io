@@ -37,7 +37,7 @@ const Navbar = () => {
         href="https://blog19.pages.dev"
         target="_blank"
         title="My blog page"
-        className="ml-auto mr-5 block rounded-md bg-[#072029] px-2 pb-1.5 pt-1 font-semibold underline-offset-4 transition-all duration-150 hover:bg-[#072029]/95 text-white hover:underline"
+        className="ml-auto mr-5 block rounded-md bg-[#072029] px-2 pb-1.5 pt-1 font-semibold text-white underline-offset-4 transition-all duration-150 hover:bg-[#072029]/95 hover:underline"
       >
         Blog
       </Link>

@@ -3,7 +3,6 @@
   --color: #6effdb;
 }
 
-
 /* Animate inline SVGs that live inside .magic-text.
    Many inline SVGs use `fill="currentColor"`, so animating the
    container's `color` (and/or setting fill:currentColor on the path)

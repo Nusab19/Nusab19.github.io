@@ -12,7 +12,7 @@ const blob = (
 
 const IntroText = (
   <svg
-    className="md:w-96 sm:w-64 w-52 transition-all duration-200"
+    className="w-52 transition-all duration-200 sm:w-64 md:w-96"
     viewBox="0 0 652 111"
     fill="none"
     xmlns="http://www.w3.org/2000/svg"
