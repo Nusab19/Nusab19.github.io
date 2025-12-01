@@ -66,24 +66,23 @@ const Footer = () => {
               </h2>
               <ul className="font-medium text-gray-400">
                 <li className="mb-4">
-                  <a
+                  <span
                     // href="/assets/files/cv.pdf"
-                    href="#"
+                    // href="#"
                     title="Yet to be done"
-                    target="_blank"
                     className="hover:underline"
                   >
                     CV
-                  </a>
+                  </span>
                 </li>
                 <li>
-                  <a
-                    href="#"
+                  <span
+                    // href="#"
                     className="hover:underline"
                     title="Yet to be done"
                   >
                     Resume
-                  </a>
+                  </span>
                 </li>
               </ul>
             </div>
