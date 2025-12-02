@@ -2,12 +2,13 @@ import Link from "next/link";
 import Image from "next/image";
 import Balancer from "react-wrap-balancer";
 import icons from "@helpers/icons";
+import { BadgeInfoIcon } from "lucide-react";
 
 const projects = [
   {
     title: "Contest Hive",
     description:
-      "A website showing the future contests from 7 different platforms",
+      "A website showing the upcoming contests from 7 different online judges.",
     technologies: ["react", "nextjs", "python"],
     link: "https://contest-hive.vercel.app/",
     github: "https://github.com/Contest-Hive/Contest-Hive/",
@@ -17,8 +18,8 @@ const projects = [
   {
     title: "Shohid24 - শহীদ২৪",
     description:
-      "A website showing the list of martyrs in the July Student Movement that happened in Bangladesh",
-    technologies: ["react", "nextjs"],
+      "A website listing the martyrs in the July Student Revolution in Bangladesh.",
+    technologies: ["nextjs", "python", "mongodb"],
     link: "https://shohid24.pages.dev/",
     github: "https://github.com/Shohid24/shohid24",
     isImage: true,
@@ -27,8 +28,8 @@ const projects = [
   {
     title: "Quran API",
     description:
-      "API for the Quran with no rate limit. No authentication required",
-    technologies: ["react", "nextjs", "python"],
+      "A simple API for the Quran with no rate limit. No authentication required.",
+    technologies: ["nextjs", "python"],
     link: "https://quranapi.pages.dev/",
     github: "https://github.com/The-Quran-Project/Quran-API",
     isImage: true,
@@ -37,7 +38,7 @@ const projects = [
   {
     title: "Al Quran Bot",
     description:
-      "A telegram bot with Arabic, English and Audio recitation of each verse of the Holy Quran",
+      "One of the best Telegram bots for the Quran with translations, audio recitations and more.",
     technologies: ["python", "mongodb"],
     link: "https://t.me/AlFurqanRobot",
     github: "https://github.com/The-Quran-Project/TG-Quran-Bot",
@@ -46,24 +47,39 @@ const projects = [
   },
   {
     title: "Toph Leaderboard",
-    description:
-      "A website showcasing the users with the most Fastest, Lightest & Shortest code submissions in toph.co",
-    technologies: ["react", "nextjs", "python"],
+    description: (
+      <span className="mt-3 block">
+        <span className="absolute -ml-0.5 -mt-5 flex items-center justify-center gap-1 text-xs tracking-wider text-red-400">
+          <BadgeInfoIcon size={15} className="mt-0.5" />
+          Not maintained anymore
+        </span>
+        A website showcasing the users with the highest number of Fastest,
+        Lightest & Shortest code submissions in{" "}
+        <a
+          href="https://toph.co"
+          target="_blank"
+          className="font-semibold italic text-sky-400/90 underline-offset-2 hover:underline"
+        >
+          toph.co
+        </a>
+      </span>
+    ),
+    technologies: ["nextjs", "python"],
     link: "https://toph.pages.dev/",
-    github: "https://github.com/Nusab19/Toph-Leaderborad",
+    github: "https://github.com/Nusab19/Toph-Leaderboard",
     isImage: true,
     imageSrc: "/images/projects/toph.svg",
   },
-  {
-    title: "pyNekobin",
-    description:
-      "Python Wrapper for Nekobin API to paste and read text snippets from nekobin.com",
-    technologies: ["python"],
-    link: "https://nekobin.com/",
-    github: "https://github.com/Nusab19/pyNekobin",
-    isImage: true,
-    imageSrc: "/images/projects/nekobin.jpg",
-  },
+  // {
+  //   title: "pyNekobin",
+  //   description:
+  //     "Python Wrapper for Nekobin API to paste and read text snippets from nekobin.com",
+  //   technologies: ["python"],
+  //   link: "https://nekobin.com/",
+  //   github: "https://github.com/Nusab19/pyNekobin",
+  //   isImage: true,
+  //   imageSrc: "/images/projects/nekobin.jpg",
+  // },
 ];
 
 const Projects = () => {
@@ -72,15 +88,30 @@ const Projects = () => {
       <div className="mx-auto max-w-screen-lg px-0 pb-40 pt-10">
         <header className="mb-10 pt-10 text-center md:mb-16">
           <h2 className="mb-4 text-3xl font-bold md:text-5xl">Projects</h2>
-          <p className="text-balance mx-auto max-w-2xl text-sm tracking-wide text-gray-400 md:text-base">
+          <p className="mx-auto max-w-2xl text-balance text-sm tracking-wide text-gray-400 md:text-base">
             Some of the things that I <b className="italic">think</b> I can
             showcase.
           </p>
         </header>
 
         <div className="grid grid-cols-1 gap-5 px-2 lg:grid-cols-2 lg:px-0">
-          {projects.map((project, index) => getProjectCard(project))}
+          {projects.map((project, index) => {
+            const isLastOdd =
+              projects.length % 2 === 1 && index === projects.length - 1;
+
+            return (
+              <div
+                key={index}
+                className={isLastOdd ? "lg:col-span-2 flex justify-center" : ""}
+              >
+                <div className={isLastOdd ? "max-w-2xl w-full" : ""}>
+                  {getProjectCard(project)}
+                </div>
+              </div>
+            );
+          })}
         </div>
+
       </div>
     </div>
   );
