@@ -55,7 +55,7 @@ const Contact = () => {
             </code>
             <br />
             <span className="mx-auto max-w-md text-xs font-light md:text-sm">
-              Don&apos;t forget to give your contact if you want me to reply!
+              Don&apos;t forget to give your contact below if you want me to reply!
             </span>
           </p>
         </header>
