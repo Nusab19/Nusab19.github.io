@@ -40,6 +40,7 @@ const About = () => {
               height={200}
               className="z-auto h-[200px] w-[200px] cursor-pointer select-none overflow-hidden rounded-[2.5em] transition-transform duration-200 hover:scale-105"
               priority
+              title="Yes, this is a real photo. No edits, nothing. Just a long exposure :>"
             />
             <span className="flex flex-col items-center justify-center text-center">
               <span className="text-2xl font-bold tracking-wider">
