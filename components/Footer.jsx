@@ -70,7 +70,7 @@ const Footer = () => {
                     // href="/assets/files/cv.pdf"
                     // href="#"
                     title="Yet to be done"
-                    className="hover:underline"
+                    className="hover:border-b-2 border-dotted tracking-wider line-through"
                   >
                     CV
                   </span>
@@ -78,7 +78,7 @@ const Footer = () => {
                 <li>
                   <span
                     // href="#"
-                    className="hover:underline"
+                    className="hover:border-b-2 border-dotted tracking-wider line-through"
                     title="Yet to be done"
                   >
                     Resume
