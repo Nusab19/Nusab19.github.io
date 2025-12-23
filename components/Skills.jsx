@@ -13,7 +13,7 @@ const skills = [
     name: "Next.js",
     icon: "nextjs",
     color: "#FFFFFF",
-    comment: "Well, it's not *bad*",
+    comment: "CVE every other week -.-",
   },
   {
     name: "React",
