@@ -24,8 +24,7 @@ const About = () => {
             <span className="mt-5 block text-sm tracking-wider text-gray-300 md:text-base">
               <Balancer>
                 Although I&apos;m a full-stack developer, I have a strong
-                preference for backend development over frontend. My focus is on
-                building reliable and high-performance software solutions.
+                preference for backend development over frontend. Performance and UX are my top priorities when bullding a software.
               </Balancer>
               <span className="mt-3 block font-mono opacity-50">
                 CSS is kinda tough tho! -.-
