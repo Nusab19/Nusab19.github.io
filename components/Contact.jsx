@@ -205,7 +205,7 @@ const Contact = () => {
                   id="message"
                   rows="6"
                   className="w-full bg-[#2b363b] px-0 text-sm text-white placeholder-gray-400 outline-none"
-                  placeholder="Write a message..."
+                  placeholder="Write a message...(ctrl+enter to send)"
                   required
                 ></textarea>
               </div>
