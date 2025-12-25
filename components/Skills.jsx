@@ -7,7 +7,7 @@ const skills = [
     name: "Python",
     icon: "python",
     color: "#3776AB",
-    comment: "I can't live without it",
+    comment: "I can't live without it <3",
   },
   {
     name: "Next.js",
@@ -19,7 +19,7 @@ const skills = [
     name: "React",
     icon: "react",
     color: "#61DAFB",
-    comment: "Ridiculously large bundle size -.-",
+    comment: "Ridiculously large bundle size >.>",
   },
   {
     name: "Tailwind CSS",
@@ -79,7 +79,7 @@ const skills = [
     name: "SQLite",
     icon: "sqlite",
     color: "#005780",
-    comment: "Way faster than MongoDB",
+    comment: "Blazingly fast!",
   },
   {
     name: "MongoDB",

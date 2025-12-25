@@ -102,16 +102,15 @@ const Projects = () => {
             return (
               <div
                 key={index}
-                className={isLastOdd ? "lg:col-span-2 flex justify-center" : ""}
+                className={isLastOdd ? "flex justify-center lg:col-span-2" : ""}
               >
-                <div className={isLastOdd ? "max-w-2xl w-full" : ""}>
+                <div className={isLastOdd ? "w-full max-w-2xl" : ""}>
                   {getProjectCard(project)}
                 </div>
               </div>
             );
           })}
         </div>
-
       </div>
     </div>
   );
@@ -187,7 +186,7 @@ function getProjectCard({
           <Link
             href={link ?? "#"}
             target="_blank"
-            className="transition-color rounded-md bg-[#eaeaea] px-2 py-1 text-sm  text-gray-800 duration-100 hover:bg-gray-700/50 hover:text-[#eaeaea]"
+            className="transition-color rounded-md bg-[#eaeaea] px-2 py-1 text-sm text-gray-800  duration-100 hover:bg-[#fff]"
           >
             Website
           </Link>
