@@ -102,7 +102,6 @@ const Contact = () => {
       memory: navigator.deviceMemory
         ? `${navigator.deviceMemory} GB`
         : "unknown",
-      cookiesEnabled: navigator.cookieEnabled,
       viewport: `${window.innerWidth}x${window.innerHeight}`,
       screenResolution: `${window.screen.width}x${window.screen.height}`,
       // whyAmITakingThisData: "Cuz as this is public, I do get lotta spams. It's just my means to indentify what's a spam and what not.",
