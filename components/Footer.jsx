@@ -64,8 +64,17 @@ const Footer = () => {
               <h2 className="mb-6 text-sm font-semibold uppercase  text-gray-200">
                 Others
               </h2>
-              <ul className="font-medium text-gray-400">
-                <li className="mb-4">
+              <ul className="font-medium text-gray-400 space-y-4">
+                <li>
+                  <a
+                    href="assets/files/resume-05-26.pdf"
+                    className="tracking-wider hover:border-b-2"
+                    title="Resume of Nusab Taha"
+                  >
+                    Resume
+                  </a>
+                </li>
+                <li>
                   <span
                     // href="/assets/files/cv.pdf"
                     // href="#"
@@ -74,23 +83,6 @@ const Footer = () => {
                   >
                     CV
                   </span>
-                </li>
-                <li>
-                  <span
-                    // href="#"
-                    className="border-dotted tracking-wider line-through hover:border-b-2"
-                    title="Yet to be done"
-                  >
-                    Resume
-                  </span>
-                </li>
-                <li>
-                  <a
-                    href="/admission"
-                    className="border-dotted tracking-wider line-through hover:border-b-2"
-                  >
-                    ---
-                  </a>
                 </li>
               </ul>
             </div>
